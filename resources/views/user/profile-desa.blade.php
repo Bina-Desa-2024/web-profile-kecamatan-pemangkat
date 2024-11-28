@@ -185,7 +185,7 @@
                 </div>
             </div>
 
-            <!-- Additional Info Section -->
+            {{-- <!-- Additional Info Section -->
             <div class="row g-4">
                 <!-- Desa Information -->
                 <div class="col-lg-6">
@@ -232,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             {{-- edit from here --}}
             <div class="row g-4 justify-content-center">
                 <!-- Desa Information -->
@@ -274,9 +274,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                            
                         </div>
                     </div>
                 </div>

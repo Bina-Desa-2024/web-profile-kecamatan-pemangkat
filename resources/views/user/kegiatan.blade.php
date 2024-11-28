@@ -17,7 +17,7 @@
         <div class="container transition-container">
             <div class="row text-center mb-5">
                 <h2 class="subjudul fw-bold">Galeri Kegiatan Desa</h2>
-                <p class="text-muted">Lihat kegiatan yang telah diselenggarakan oleh Desa Pemangkat Kota.</p>
+                <p class="text-muted">Lihat kegiatan yang telah diselenggarakan oleh Kecamatan Pemangkat.</p>
             </div>
             <div class="row g-4">
                 @forelse ($kelolakegiatans as $item)

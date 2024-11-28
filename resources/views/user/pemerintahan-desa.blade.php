@@ -16,7 +16,7 @@
   <!-- Pemerintahan Desa -->
   <section id="pemerintahan-desa">
     <div class="container mt-5">
-      <h4 class="subjudul text-center mb-5">STRUKTUR ORGANISASI PEMERINTAHAN <br> DESA SUNGAI KERAN <br>2020-2026</h4>
+      <h4 class="subjudul text-center mb-5">STRUKTUR ORGANISASI PEMERINTAHAN <br> KECAMATAN PEMANGKAT <br>2020-2026</h4>
       <div class="row">
         <div class="container">
           <div class="col-lg-4 col-sm-6 mx-auto">

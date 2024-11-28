@@ -13,7 +13,7 @@
     <!-- End of Banner -->
     <section id="content" class="py-5">
         <div class="container-fluid transition-container col-lg-10 shadow-sm p-4 rounded">
-            <h4 class="subjudul text-center mb-5">STRUKTUR ORGANISASI PEMERINTAHAN <br> DESA PEMANGKAT KOTA
+            <h4 class="subjudul text-center mb-5">STRUKTUR ORGANISASI PEMERINTAHAN <br> KECAMATAN PEMANGKAT
                 <br>{{ $strukturperangkatdesa->nama }}</h4>
             <!-- Image Section -->
             <div class="d-flex justify-content-center mb-4">
