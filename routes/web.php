@@ -15,6 +15,7 @@ use App\Models\Profildesa;
 use App\Models\Kelolakegiatan;
 use App\Models\Strukturperangkatdesa;
 use App\Models\Layananadministrasi;
+use App\Models\Daftardesa;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PerangkatdesaController::class, 'show']);
