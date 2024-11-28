@@ -6,8 +6,8 @@
         <div class="container-fluid banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="row">
                 <div class="text-center">
-                    <h2 class="text-banner-h2">Selamat Datang</h2>
-                    <h2 class="text-banner-h1">Website Kecematan Pemangkat</h2>
+                    <h2 class="text-banner-h2">Selamat Datang di</h2>
+                    <h2 class="text-banner-h1">Website Kecamatan Pemangkat</h2>
                 </div>
             </div>
         </div>
@@ -48,14 +48,16 @@
     </section>
     <!-- End of Content Section -->
 
-    <div class="py-5"></div>
+    <div class="py-2"></div>
 
     <section id="informasi-layanan" class="py-5" style="margin-top:5px">
         <div class="container transition-container">
-            <div class="row text-center mb-5">
-                <h2 class="fw-bold">Informasi Layanan</h2>
-                <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
-            </div>
+            <h2 class="subjudul text-center fw-bold text-dark">Informasi Layanan</h2>
+            <hr class=" mb-5 " style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
+                {{-- <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px"> --}}
+            {{-- <div class="row text-center mb-5">
+                
+            </div> --}}
             <div class="row g-4">
                 @php
                     $layananStatis = [
@@ -150,7 +152,7 @@
         </div>
     </section>
 
-    <div class="py-5"></div>
+    <div class="py-2"></div>
 
     <!-- Video Profile Section -->
     <section id="video-profile" class="py-5">
@@ -172,7 +174,7 @@
     </section>
     <!-- End of Video Profile Section -->
 
-    <div class="py-5"></div>
+    <div class="py-2"></div>
 
     <!-- Perangkat Desa Section -->
     <section id="perangkat-desa" class="py-5">
@@ -180,7 +182,7 @@
             <!-- Section Title -->
             <div class="row mb-4 justify-content-center text-center">
                 <div class="col-12">
-                    <h2 class="subjudul fw-bold">Perangkat Desa</h2>
+                    <h2 class="subjudul text-center fw-bold text-dark">Perangkat Desa</h2>
                     <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
                 </div>
             </div>
@@ -248,12 +250,12 @@
     </section>
     <!-- End of Perangkat Desa Section -->
 
-    <div class="py-5"></div>
+    <div class="py-2"></div>
 
     <!-- Pengumuman -->
     <section id="pengumuman" class="py-5 bg-white">
         <div class="container transition-container mb-3">
-            <h2 class="subjudul text-center fw-bold">Pengumuman</h2>
+            <h2 class="subjudul text-center fw-bold text-dark">Pengumuman</h2>
             <hr class=" mb-5" style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             <div class="row g-4 justify-content-center">
                 @foreach ($pengumumen as $pengumuman)
@@ -297,12 +299,12 @@
         </div>
     </section>
 
-    <div class="py-5"></div>
+    <div class="py-2"></div>
 
     <section id="kegiatan" class="py-5">
         <div class="container transition-container">
             <div class="row text-center mb-5">
-                <h2 class="subjudul fw-bold">Galeri Kegiatan Desa</h2>
+                <h2 class="subjudul text-center fw-bold text-dark">Galeri Kegiatan Desa</h2>
                 <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             </div>
             <div class="row g-4">
@@ -332,7 +334,7 @@
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-4">
-                <h2 class="fw-bold">Website Desa</h2>
+                <h2 class="subjudul text-center fw-bold text-dark">Website Desa</h2>
             </div>
             <div class="row g-4">
                 <!-- Desa 1 -->
@@ -340,8 +342,8 @@
                     <a href="/desa1" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa1.png" alt="Logo Desa 1" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 1</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 1" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Pemangkat Kota</h5>
                             </div>
                         </div>
                     </a>
@@ -351,8 +353,8 @@
                     <a href="/desa2" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa2.png" alt="Logo Desa 2" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 2</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 2" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Gugah Sejahtera</h5>
                             </div>
                         </div>
                     </a>
@@ -362,8 +364,8 @@
                     <a href="/desa3" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa3.png" alt="Logo Desa 3" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 3</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 3" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Harapan</h5>
                             </div>
                         </div>
                     </a>
@@ -373,8 +375,8 @@
                     <a href="/desa4" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa4.png" alt="Logo Desa 4" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 4</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 4" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Penjajap</h5>
                             </div>
                         </div>
                     </a>
@@ -384,8 +386,8 @@
                     <a href="/desa5" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa5.png" alt="Logo Desa 5" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 5</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 5" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Lonam</h5>
                             </div>
                         </div>
                     </a>
@@ -395,8 +397,8 @@
                     <a href="/desa6" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa6.png" alt="Logo Desa 6" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 6</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 6" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Sebatuan</h5>
                             </div>
                         </div>
                     </a>
@@ -406,8 +408,8 @@
                     <a href="/desa7" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa7.png" alt="Logo Desa 7" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 7</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 7" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Perapakan</h5>
                             </div>
                         </div>
                     </a>
@@ -417,8 +419,8 @@
                     <a href="/desa8" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="logo-desa8.png" alt="Logo Desa 8" class="img-fluid mb-3" style="max-height: 100px;">
-                                <h5 class="card-title text-dark fw-bold">Desa 8</h5>
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 8" class="img-fluid mb-3" style="max-height: 100px;">
+                                <h5 class="card-title text-dark fw-bold">Desa Jelutung</h5>
                             </div>
                         </div>
                     </a>

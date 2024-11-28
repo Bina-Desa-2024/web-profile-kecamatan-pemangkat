@@ -56,11 +56,11 @@
 }
 
 .logo-text strong {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .logo-text small {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -121,13 +121,13 @@
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #ffd700;
+  color: #495057;
   text-underline-offset: 6px;
 }
 
 .navbar-nav .nav-item .nav-link.active:hover {
-  color: #ffd700;
-  text-decoration-color: #ffd700;
+  color: #495057;
+  text-decoration-color: #495057;
 }
 
 /* floating button */
@@ -216,7 +216,7 @@ footer .social-icons a:hover {
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background-color: #286a59;
+    background-color: #f2bf18;
   }
 
   .navbar-nav .nav-link {
@@ -228,6 +228,15 @@ footer .social-icons a:hover {
 
   .navbar-toggler {
     background-color: #1E90FF;
+  }
+
+  .logo-text strong {
+    font-size: 0.9rem;
+  }
+  
+  .logo-text small {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -356,6 +365,10 @@ footer .social-icons a:hover {
   .text-banner {
     font-size: 1.8rem;
   }
+
+  .subjudul {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -413,14 +426,7 @@ footer .social-icons a:hover {
 /* typography */
 .container .subjudul {
   font-family: var(--pr-font) !important;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.container-fluid .subjudul {
-  font-family: var(--pr-font) !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
