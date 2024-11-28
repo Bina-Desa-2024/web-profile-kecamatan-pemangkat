@@ -5,7 +5,7 @@
         <div class="container-fluid banner-image w-100 vh-60 d-flex justify-content-center align-items-center">
             <div class="row">
                 <div class="text-center">
-                    <h1 class="text-banner">Lembaga Desa</h1>
+                    <h1 class="text-banner">Lembaga Kecamatan</h1>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
     <section id="lembaga-desa" class="py-5">
         <div class="container transition-container">
             <div class="row text-center mb-4">
-                <h2 class="fw-bold">Lembaga Desa</h2>
+                <h2 class="fw-bold">Lembaga Kecamatan</h2>
                 <p class="text-muted">Berkenalan dengan lembaga desa yang mendukung kemajuan Desa Pemangkat Kota.</p>
             </div>
             <div class="row">

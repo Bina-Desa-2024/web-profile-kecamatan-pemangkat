@@ -60,7 +60,7 @@ class PerangkatdesaController
             'pengumumen'=>Pengumuman::limit(3)->get(),
             'profiledesa' => Profildesa::first(),
             'layananadministrasis' => Layananadministrasi::all(),
-            'kelolakegiatans' => Kelolakegiatan::all()
+            'kelolakegiatans' => Kelolakegiatan::limit(3)->get()
         ]);
     }
 

@@ -5,7 +5,7 @@
         <div class="container-fluid banner-image w-100 vh-60 d-flex justify-content-center align-items-center">
             <div class="row">
                 <div class="text-center">
-                    <h1 class="text-banner">Perangkat Desa</h1>
+                    <h1 class="text-banner">Perangkat Kecamatan</h1>
                 </div>
             </div>
         </div>
@@ -13,7 +13,7 @@
     <!-- End of Banner -->
     <section id="content" class="py-5">
         <div class="container-fluid transition-container col-lg-10 shadow-sm p-4 rounded">
-            <h4 class="subjudul text-center mb-5">STRUKTUR ORGANISASI PEMERINTAHAN <br> DESA PEMANGKAT KOTA
+            <h4 class="subjudul text-center mb-5">STRUKTUR ORGANISASI PEMERINTAHAN <br> KECAMATAN PEMANGKAT 
                 <br>{{ $strukturperangkatdesa->nama }}</h4>
             <!-- Image Section -->
             <div class="d-flex justify-content-center mb-4">

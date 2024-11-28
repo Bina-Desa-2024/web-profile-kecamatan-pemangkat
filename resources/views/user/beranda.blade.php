@@ -148,6 +148,13 @@
                         </div>
                     </div>
                 @endforeach
+                <div class="col-lg-12 text-center mt-4">
+                    <a href="/layanan-administrasi"
+                        class="btn px-3 py-2 shadow-sm fw-bold"
+                        style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                        <i class="fas fa-info-circle me-2"></i> Selengkapnya
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -236,6 +243,7 @@
                 </button>
             </div>
 
+
             <!-- "See More" Button -->
             {{-- <div class="row mt-4">
                 <div class="col-lg-12 text-center">
@@ -296,6 +304,13 @@
                     </div>
                 @endforeach
             </div>
+            <div class="col-lg-12 text-center mt-4">
+                <a href="/daftar-pengumuman" 
+                    class="btn px-3 py-2 shadow-sm fw-bold"
+                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                    <i class="fas fa-info-circle me-2"></i> Selengkapnya
+                </a>
+            </div>
         </div>
     </section>
 
@@ -304,7 +319,7 @@
     <section id="kegiatan" class="py-5">
         <div class="container transition-container">
             <div class="row text-center mb-5">
-                <h2 class="subjudul text-center fw-bold text-dark">Galeri Kegiatan Desa</h2>
+                <h2 class="subjudul text-center fw-bold text-dark">Galeri Kegiatan Kecamatan</h2>
                 <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             </div>
             <div class="row g-4">
@@ -326,6 +341,13 @@
                         <p class="text-muted">Belum ada kegiatan yang tersedia.</p>
                     </div>
                 @endforelse
+            </div>
+            <div class="col-lg-12 text-center mt-4">
+                <a href="/daftar-kegiatan"
+                    class="btn px-3 py-2 shadow-sm fw-bold"
+                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                    <i class="fas fa-info-circle me-2"></i> Selengkapnya
+                </a>
             </div>
         </div>
     </section>
