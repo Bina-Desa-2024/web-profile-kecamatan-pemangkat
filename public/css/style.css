@@ -101,7 +101,7 @@
 }
 
 .navbar-solid {
-  background-color: #286a59; 
+  background-color: #f2bf18; 
   transition: background-color 0.3s ease;
 }
 
@@ -261,7 +261,7 @@ footer .social-icons a:hover {
 
 
 #banner-beranda .banner-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/image/gunung-gajah.JPG');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/image/kotapemangkat.webp');
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -272,7 +272,7 @@ footer .social-icons a:hover {
 }
 
 .banner-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/image/gunung-gajah.JPG');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/image/kotapemangkat.webp');
   background-size: cover;
   height: 65vh;
   display: flex;
