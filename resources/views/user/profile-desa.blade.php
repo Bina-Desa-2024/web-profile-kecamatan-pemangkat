@@ -49,7 +49,7 @@
                 <!-- Visi Section -->
                 <div class="col-lg-6 col-md-12">
                     <div class="card shadow-sm border-0 h-100">
-                        <div class="card-header bg-success text-white text-center py-3 rounded-top">
+                        <div class="card-header text-white text-center py-3 rounded-top" style="background-color: #c29912">
                             <h5 class="mb-0 fw-bold">Visi</h5>
                         </div>
                         <div class="card-body">
@@ -63,7 +63,7 @@
                 <!-- Misi Section -->
                 <div class="col-lg-6 col-md-12">
                     <div class="card shadow-sm border-0 h-100">
-                        <div class="card-header bg-success text-white text-center py-3 rounded-top">
+                        <div class="card-header text-white text-center py-3 rounded-top" style="background-color: #c29912">
                             <h5 class="mb-0 fw-bold">Misi</h5>
                         </div>
                         <div class="card-body">
@@ -88,11 +88,11 @@
                 <!-- Total Jiwa -->
                 <div class="col-lg-6">
                     <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
-                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#c29912; border-radius:100%; width:80px; height:80px; margin-right:10px;">
                             <i class="fa-solid fa-users" style="color: white; font-size:45px"></i>
                         </div>
                         <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
-                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_jiwa }}">0</span>
+                            <span style="font-size: 30px; color:#99790e" class="fw-bold counter" data-target="{{ $profiledesa->total_jiwa }}">0</span>
                             <div style="font-size: 16px" class="fw-bold">Total Jiwa</div>
                         </div>
                     </div>
@@ -100,11 +100,11 @@
                 <!-- Total KK -->
                 <div class="col-lg-6">
                     <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
-                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#c29912; border-radius:100%; width:80px; height:80px; margin-right:10px;">
                             <i class="fa-solid fa-user" style="color: white; font-size:45px"></i>
                         </div>
                         <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
-                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_kk }}">0</span>
+                            <span style="font-size: 30px; color:#99790e" class="fw-bold counter" data-target="{{ $profiledesa->total_kk }}">0</span>
                             <div style="font-size: 16px" class="fw-bold">Total Kepala Keluarga</div>
                         </div>
                     </div>
@@ -112,11 +112,11 @@
                 <!-- Total Laki-laki -->
                 <div class="col-lg-6">
                     <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
-                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#c29912; border-radius:100%; width:80px; height:80px; margin-right:10px;">
                             <i class="fa-solid fa-mars" style="color: white; font-size:45px"></i>
                         </div>
                         <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
-                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_laki_laki }}">0</span>
+                            <span style="font-size: 30px; color:#99790e" class="fw-bold counter" data-target="{{ $profiledesa->total_laki_laki }}">0</span>
                             <div style="font-size: 16px" class="fw-bold">Total Laki-laki</div>
                         </div>
                     </div>
@@ -124,11 +124,11 @@
                 <!-- Jumlah Perempuan -->
                 <div class="col-lg-6">
                     <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
-                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#c29912; border-radius:100%; width:80px; height:80px; margin-right:10px;">
                             <i class="fa-solid fa-venus" style="color: white; font-size:45px"></i>
                         </div>
                         <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
-                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_perempuan }}">0</span>
+                            <span style="font-size: 30px; color:#99790e" class="fw-bold counter" data-target="{{ $profiledesa->total_perempuan }}">0</span>
                             <div style="font-size: 16px" class="fw-bold">Total Perempuan</div>
                         </div>
                     </div>
@@ -239,37 +239,37 @@
                 <div class="col-lg-6">
                     <div class="card border-0 rounded-4" style="background-color: #f1f1f1; ">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold text-success">Informasi Kecamatan</h5>
+                            <h5 class="card-title fw-bold" style="color:#c29912">Informasi Kecamatan</h5>
                             <div class="d-flex flex-column">
                                 <div class="d-flex justify-content-between gap-2">
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-circle-arrow-up" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-circle-arrow-up" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Batas Utara</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->batas_utara }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->batas_utara }}</div>
                                         </div>
                                     </div>
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-circle-arrow-down" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-circle-arrow-down" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Batas Selatan</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->batas_selatan }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->batas_selatan }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between gap-2">
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-circle-arrow-right" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-circle-arrow-left" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Batas Barat</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->batas_barat }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->batas_barat }}</div>
                                         </div>
                                     </div>
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-circle-arrow-left" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-circle-arrow-right" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Batas Timur</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->batas_timur }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->batas_timur }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -285,37 +285,37 @@
                 <div class="col-lg-6">
                     <div class="card border-0 rounded-4" style="background-color: #f1f1f1; ">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold text-success">Statistik Kecamatan</h5>
+                            <h5 class="card-title fw-bold" style="color:#c29912">Statistik Kecamatan</h5>
                             <div class="d-flex flex-column">
                                 <div class="d-flex justify-content-between gap-2">
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-map" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-map" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Luas Desa</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->luas_desa }} km²</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->luas_desa }} km²</div>
                                         </div>
                                     </div>
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-layer-group" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-layer-group" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Jumlah Desa</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->jumlah_dusun }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->jumlah_dusun }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between gap-2">
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-solid fa-building" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-solid fa-building" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Jumlah RT</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->jumlah_rt }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->jumlah_rt }}</div>
                                         </div>
                                     </div>
                                     <div class="d-flex rounded-3 bg-light mb-2 align-items-center w-100" style="padding:10px">
-                                        <i class="fa-regular fa-building" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                        <i class="fa-regular fa-building" style="font-size: 30px; margin-right:8px;color:#f2bf18;"></i>
                                         <div class="d-flex flex-column">
                                             <div class="fw-bold" style="">Jumlah RW</div>
-                                            <div class="" style="color: #34b091">{{ $profiledesa->jumlah_rw }}</div>
+                                            <div class="" style="color: #c29912">{{ $profiledesa->jumlah_rw }}</div>
                                         </div>
                                     </div>
                                 </div>
