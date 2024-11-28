@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Desa - Desa Parapakan</title>
+    <title>Profile Desa - Kecamatan Pemangkat</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap"
@@ -28,8 +28,8 @@
                     <img src="{{ asset('image/Sambas Logo.png') }}" width="40" class="me-3"
                         alt="Logo of Desa Parapakan">
                     <span class="logo-text d-flex flex-column">
-                        <strong>Desa Pemangkat Kota</strong>
-                        <small>Kecamatan Pemangkat</small>
+                        <strong>Kecamatan Pemangkat</strong>
+                        <small>Kabupaten Sambas</small>
                     </span>
                 </a>
 

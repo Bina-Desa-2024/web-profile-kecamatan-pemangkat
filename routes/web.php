@@ -30,6 +30,7 @@ Route::get('/profile-desa', function () {
 Route::get('/perangkat-desa', function () {
     return view('user/perangkat-desa',[
         'strukturperangkatdesa' => Strukturperangkatdesa::first()
+        
     ]);
 });
 Route::get('/daftar-kegiatan', function () {
@@ -82,6 +83,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
 //     return view('admin/admin-dashboard');
 // })->middleware('auth');
 Route::get('/admin', function () {
+    
     return view('admin/admin-dashboard',[
         'profiledesa' => Profildesa::first()
      ]);
