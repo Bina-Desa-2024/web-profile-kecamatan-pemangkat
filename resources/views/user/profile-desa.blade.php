@@ -233,6 +233,77 @@
                     </div>
                 </div>
             </div>
+            {{-- edit from here --}}
+            <div class="row g-4 justify-content-center">
+                <!-- Desa Information -->
+                <div class="col-lg-6" style="max-width:300px">
+                    <div class="card border-0 rounded-4" style="background-color: #f1f1f1; ">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-success">Informasi Kecamatan</h5>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-up" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Batas Utara</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->batas_utara }}</div>
+                                </div>
+                            </div>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-down" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Batas Selatan</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->batas_selatan }}</div>
+                                </div>
+                            </div>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-right" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Batas Barat</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->batas_barat }}</div>
+                                </div>
+                            </div>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-left" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Batas Timur</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->batas_timur }}</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistical Information -->
+                <div class="col-lg-6" style="max-width:300px">
+                    <div class="card border-0 rounded-4" style="background-color: #f1f1f1; ">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-success">Statistik Kecamatan</h5>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-up" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Luas Desa</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->luas_desa }} km²</div>
+                                </div>
+                            </div>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-down" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Jumlah Desa</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->jumlah_dusun }}</div>
+                                </div>
+                            </div>
+                            <div class="d-flex rounded-3 bg-light mb-2 align-items-center" style="width: 150px; padding-left: 8px">
+                                <i class="fa-solid fa-circle-arrow-right" style="font-size: 30px; margin-right:8px;color:#34b091;"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold" style="">Jumlah ??</div>
+                                    <div class="" style="color: #34b091">{{ $profiledesa->jumlah_rt }}</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End of Kantor Desa Section -->
