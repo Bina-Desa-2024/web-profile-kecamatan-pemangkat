@@ -361,7 +361,7 @@
             <div class="row g-4">
                 <!-- Desa 1 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa1" class="text-decoration-none">
+                    <a href="https://pemangkat-kota.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 1" class="img-fluid mb-3" style="max-height: 100px;">
@@ -372,7 +372,7 @@
                 </div>
                 <!-- Desa 2 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa2" class="text-decoration-none">
+                    <a href="https://gugah-sejahtera.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 2" class="img-fluid mb-3" style="max-height: 100px;">
@@ -383,7 +383,7 @@
                 </div>
                 <!-- Desa 3 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa3" class="text-decoration-none">
+                    <a href="https://harapan.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 3" class="img-fluid mb-3" style="max-height: 100px;">
@@ -394,7 +394,7 @@
                 </div>
                 <!-- Desa 4 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa4" class="text-decoration-none">
+                    <a href="https://penjajap.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 4" class="img-fluid mb-3" style="max-height: 100px;">
@@ -405,7 +405,7 @@
                 </div>
                 <!-- Desa 5 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa5" class="text-decoration-none">
+                    <a href="https://lonam.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 5" class="img-fluid mb-3" style="max-height: 100px;">
@@ -416,7 +416,7 @@
                 </div>
                 <!-- Desa 6 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa6" class="text-decoration-none">
+                    <a href="https://sebatuan.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 6" class="img-fluid mb-3" style="max-height: 100px;">
@@ -427,7 +427,7 @@
                 </div>
                 <!-- Desa 7 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa7" class="text-decoration-none">
+                    <a href="https://perapakan.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 7" class="img-fluid mb-3" style="max-height: 100px;">
@@ -438,7 +438,7 @@
                 </div>
                 <!-- Desa 8 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa8" class="text-decoration-none">
+                    <a href="https://jelutung.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 8" class="img-fluid mb-3" style="max-height: 100px;">
