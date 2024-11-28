@@ -6,7 +6,7 @@
     <div class="container-fluid banner-image w-100 vh-60 d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="text-center">
-          <h1 class="text-banner">Struktur Pemerintahan Desa</h1>
+          <h1 class="text-banner">Struktur Pemerintahan Kecamatan</h1>
         </div>
       </div>
     </div>

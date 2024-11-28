@@ -6,7 +6,7 @@
             class="container-fluid banner-image w-100 vh-60 d-flex justify-content-center align-items-center bg-dark text-white">
             <div class="row">
                 <div class="text-center">
-                    <h1 class="fw-bold display-4">Profil Desa</h1>
+                    <h1 class="fw-bold display-4">Profil Kecamatan</h1>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
     <section id="content" class="py-5">
         <div class="container-fluid transition-container col-lg-10 shadow-sm p-4 rounded">
             <!-- Section Title -->
-            <h2 class="subjudul mb-4 text-center fw-bold">Sejarah Desa</h2>
+            <h2 class="subjudul mb-4 text-center fw-bold">Sejarah Kecamatan</h2>
             <div class="row align-items-center flex-column">
                 <!-- Image Content -->
                 <div class="col-12 mb-4">
@@ -82,7 +82,7 @@
     <!-- Kependudukan Section -->
     <section id="kependudukan" class="py-5 bg-white">
         <div class="container transition-container col-lg-10 shadow-sm p-4 rounded">
-            <h2 class="subjudul text-center mb-5 fw-bold">Demografis Desa</h2>
+            <h2 class="subjudul text-center mb-5 fw-bold">Demografis Kecamatan</h2>
             <!-- Key Statistics Section -->
             <div class="row g-4 text-center">
                 <!-- Total Jiwa -->

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Desa - Kecamatan Pemangkat</title>
+    <title>Profil Kecamatan Pemangkat</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('/image/Sambas Logo compress 300x300.png') }}">
     <link
@@ -49,20 +49,20 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('profile-desa') ? 'active' : '' }}"
-                                href="/profile-desa">Profil Desa</a>
+                                href="/profile-desa">Profil</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {{ Request::is('perangkat-desa', 'lembaga-desa') ? 'active' : '' }}"
                                 href="#" id="pemerintahan-desa" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Pemerintahan Desa
+                                Pemerintahan 
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/perangkat-desa">Perangkat Desa</a></li>
+                                <li><a class="dropdown-item" href="/perangkat-desa">Perangkat Kecamatan</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="/lembaga-desa">Lembaga Desa</a></li>
+                                <li><a class="dropdown-item" href="/lembaga-desa">Lembaga Kecamatan</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">

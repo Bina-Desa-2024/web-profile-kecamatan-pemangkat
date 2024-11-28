@@ -94,14 +94,14 @@
                         <a href="profildesa" class="sidebar-link {{ Request::is('profildesa*') ? 'active' : '' }}"
                             id="admin-profile-desa">
                             <i class="fa-solid fa-id-card pe-2"></i>
-                            <span class="link-text">Profile Desa</span>
+                            <span class="link-text">Profile</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a href="perangkatdesa" class="sidebar-link {{ Request::is('perangkatdesa*') ? 'active' : '' }}"
                             id="admin-perangkat-desa">
                             <i class="fa-solid fa-user-tie pe-2"></i>
-                            <span class="link-text">Perangkat Desa</span>
+                            <span class="link-text">Perangkat Kecematan</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
@@ -109,7 +109,7 @@
                             class="sidebar-link {{ Request::is('lembagadesa*') ? 'active' : '' }}"
                             id="admin-lembaga-desa">
                             <i class="fa-solid fa-landmark pe-2"></i>
-                            <span class="link-text">Lembaga Desa</span>
+                            <span class="link-text">Lembaga Kecamatan</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
