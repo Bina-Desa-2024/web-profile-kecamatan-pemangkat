@@ -87,37 +87,49 @@
             <div class="row g-4 text-center">
                 <!-- Total Jiwa -->
                 <div class="col-lg-6">
-                    <div class="card p-3 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-2">Total Jiwa</h5>
-                            <span class="counter display-4" data-target="{{ $profiledesa->total_jiwa }}">0</span>
+                    <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                            <i class="fa-solid fa-users" style="color: white; font-size:45px"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
+                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_jiwa }}">0</span>
+                            <div style="font-size: 16px" class="fw-bold">Total Jiwa</div>
                         </div>
                     </div>
                 </div>
                 <!-- Total KK -->
                 <div class="col-lg-6">
-                    <div class="card p-3 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-2">Kepala Keluarga</h5>
-                            <span class="counter display-4" data-target="{{ $profiledesa->total_kk }}">0</span>
+                    <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                            <i class="fa-solid fa-user" style="color: white; font-size:45px"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
+                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_kk }}">0</span>
+                            <div style="font-size: 16px" class="fw-bold">Total Kepala Keluarga</div>
                         </div>
                     </div>
                 </div>
                 <!-- Total Laki-laki -->
                 <div class="col-lg-6">
-                    <div class="card p-3 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-2">Laki-Laki</h5>
-                            <span class="counter display-4" data-target="{{ $profiledesa->total_laki_laki }}">0</span>
+                    <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                            <i class="fa-solid fa-mars" style="color: white; font-size:45px"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
+                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_laki_laki }}">0</span>
+                            <div style="font-size: 16px" class="fw-bold">Total Laki-laki</div>
                         </div>
                     </div>
                 </div>
                 <!-- Jumlah Perempuan -->
                 <div class="col-lg-6">
-                    <div class="card p-3 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-2">Perempuan</h5>
-                            <span class="counter display-4" data-target="{{ $profiledesa->total_perempuan }}">0</span>
+                    <div class="d-flex" style="border-radius:20px; padding:20px; background-color:#f1f1f1; ">
+                        <div class="d-flex align-items-center justify-content-center" style=" background-color:#286a59; border-radius:100%; width:80px; height:80px; margin-right:10px;">
+                            <i class="fa-solid fa-venus" style="color: white; font-size:45px"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between p-1" style=" text-align: left;">
+                            <span style="font-size: 30px" class="fw-bold counter" data-target="{{ $profiledesa->total_perempuan }}">0</span>
+                            <div style="font-size: 16px" class="fw-bold">Total Perempuan</div>
                         </div>
                     </div>
                 </div>
