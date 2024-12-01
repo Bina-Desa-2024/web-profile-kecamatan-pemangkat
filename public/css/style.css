@@ -928,8 +928,8 @@ footer {
 }
 
 #sidebar {
-  max-width: 264px;
-  min-width: 264px;
+
+  min-width: 310px;
   background: #286a59;
   transition: all 0.35s ease-in-out;
 }

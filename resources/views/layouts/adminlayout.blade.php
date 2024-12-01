@@ -62,6 +62,8 @@
             font-weight: bold;
         }
 
+        
+
         /* .bs-sn ol{
             
             list-style-type: decimal;
