@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::create([
-            'username' => 'test',
-            'password' =>bcrypt('1234')
+            'username' => 'admin',
+            'password' =>bcrypt('adminpemangkat123')
         ]);
         Profildesa::create([
             'sejarah_desa' => 'Sejarah singkat desa ini bermula dari...',
@@ -89,13 +89,13 @@ class DatabaseSeeder extends Seeder
         ]);
         Kelolakontak::create([
             'no_hp'=>'081234567890',
-            'url_ig'=>'youhou',
+            'url_ig'=>'',
             'email' =>'test@gmail.com',
-            'url_fb'=>'youhou',
-            'url_yt'=>'youhou',
+            'url_fb'=>'',
+            'url_yt'=>'',
         ]);
         Strukturperangkatdesa::create([
-            'nama'=>'youhou',
+            'nama'=>'',
             'gambar_strukturdesa'=>'gambar_yang_tersimpan/1AHM3BU6CJuSik5tgCegqRJztL1IG1oVhBurhJUm.jpg',
         ]);
     }

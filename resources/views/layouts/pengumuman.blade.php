@@ -16,10 +16,10 @@
 
         <style>
             body {
-                padding-top: 30px; /* Sesuaikan dengan tinggi navbar */
+                padding-top: 30px; 
             }
             .navbar {
-                background-color: #f2bf18; /* Warna solid navbar */
+                background-color: #286a59; 
             }
             .navbar .nav-link {
                 color: #fff;
@@ -27,7 +27,7 @@
             }
             .navbar .nav-link:hover,
             .navbar .nav-link.active {
-                color: #495057; /* Warna kuning untuk item aktif atau hover */
+                color: #ffc107; 
             }
             #chatbotBtn {
                 position: fixed;
@@ -47,6 +47,8 @@
                     <span class="logo-text d-flex flex-column">
                         <strong>Kecamatan Pemangkat</strong>
                         <small>Kabupaten Sambas</small>
+                        <strong>Kecamatan Pemangkat</strong>
+                        <small>Kabupaten Sambas</small>
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,15 +57,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">BERANDA</a></li>
-                        <li class="nav-item"><a class="nav-link {{ Request::is('profile-desa') ? 'active' : '' }}" href="/profile-desa">PROFIL DESA</a></li>
+                        <li class="nav-item"><a class="nav-link {{ Request::is('profile-desa') ? 'active' : '' }}" href="/profile-desa">PROFIL</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {{ Request::is('perangkat-desa', 'lembaga-desa') ? 'active' : '' }}" href="#" id="pemerintahan-desa" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PEMERINTAHAN DESA
+                                PEMERINTAHAN KECAMATAN
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/perangkat-desa">PERANGKAT DESA</a></li>
+                                <li><a class="dropdown-item" href="/perangkat-desa">PERANGKAT KECAMATAN</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/lembaga-desa">LEMBAGA DESA</a></li>
+                                <li><a class="dropdown-item" href="/lembaga-desa">LEMBAGA KECAMATAN</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -71,7 +73,7 @@
                                 INFORMASI PUBLIK
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/layanan-administrasi">LAYANAN ADMINISTRASI DESA</a></li>
+                                <li><a class="dropdown-item" href="/layanan-administrasi">LAYANAN ADMINISTRASI</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="/daftar-pengumuman">PENGUMUMAN</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -101,10 +103,9 @@
             <div class="row">
                 <!-- About Section -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase">Tentang Desa</h5>
+                    <h5 class="text-uppercase">Tentang</h5>
                     <p>
-                        Desa Parapakan adalah desa yang berlokasi di Kabupaten Sambas, dikenal dengan keragaman budaya
-                        dan potensi alamnya.
+                        Pemangkat adalah sebuah kecamatan di Kabupaten Sambas, Kalimantan Barat, Indonesia.
                     </p>
                 </div>
                 <!-- Quick Links Section -->
@@ -114,7 +115,6 @@
                         <li><a href="/" class="text-white text-decoration-none">Beranda</a></li>
                         <li><a href="/profile-desa" class="text-white text-decoration-none">Profil Desa</a></li>
                         <li><a href="/layanan-publik" class="text-white text-decoration-none">Layanan Publik</a></li>
-                        <li><a href="/daftar-kontak" class="text-white text-decoration-none">Kontak</a></li>
                     </ul>
                 </div>
                 <!-- Contact Section -->
@@ -122,8 +122,8 @@
                     <h5 class="text-uppercase">Hubungi Kami</h5>
                     <p>
                         <i class="fas fa-phone-alt me-2"></i>0812-3456-7890<br>
-                        <i class="fas fa-envelope me-2"></i>parapakan@example.com<br>
-                        <i class="fas fa-map-marker-alt me-2"></i>Desa Parapakan, Sambas, Kalimantan Barat
+                        <i class="fas fa-envelope me-2"></i>pemangkat@example.com<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>Sambas, Kalimantan Barat
                     </p>
                     <div>
                         <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
@@ -135,7 +135,7 @@
             </div>
             <hr class="bg-light">
             <div class="text-center">
-                <p class="mb-0">Copyright &copy; 2024 Desa Parapakan. All rights reserved.</p>
+                <p class="mb-0">Copyright &copy; 2024 Kecamatan Pemangkat. All rights reserved.</p>
             </div>
         </div>
     </footer>
