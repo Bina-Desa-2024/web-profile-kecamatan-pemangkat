@@ -31,7 +31,7 @@
                 <!-- Text Content -->
                 <div class="col-12">
                     <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
-                        {!! \Illuminate\Support\Str::limit($profiledesa->sejarah_desa, 700) !!}
+                        {!! \Illuminate\Support\Str::limit($profiledesa->sejarah_desa, 10000) !!}
                     </p>
                 </div>
             </div>
@@ -185,8 +185,8 @@
                 </div>
             </div>
 
-            {{-- <!-- Additional Info Section -->
-            <div class="row g-4">
+            <!-- Additional Info Section -->
+            {{-- <div class="row g-4">
                 <!-- Desa Information -->
                 <div class="col-lg-6">
                     <div class="card shadow-sm border-0">
@@ -211,7 +211,7 @@
                 </div>
 
                 <!-- Statistical Information -->
-                <div class="col-lg-6">
+                {{-- <div class="col-lg-6">
                     <div class="card shadow-sm border-0">
                         <div class="card-body">
                             <h5 class="card-title fw-bold text-success">Statistik Desa</h5>
@@ -231,8 +231,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div> --}}
+                </div> --}}
+            {{-- </div> --}}
             {{-- edit from here --}}
             <div class="row g-4 justify-content-center">
                 <!-- Desa Information -->

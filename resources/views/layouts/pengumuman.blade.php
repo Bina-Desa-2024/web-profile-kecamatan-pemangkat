@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Desa - Desa Parapakan</title>
+    <title>Profil Kecamatan Pemangkat</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ asset('/image/Sambas Logo compress 300x300.png') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
@@ -44,6 +45,8 @@
                 <a class="navbar-brand ms-3 d-flex align-items-center" href="/">
                     <img src="{{ asset('image/Sambas Logo.png') }}" width="40" class="me-3" alt="Logo of Desa Parapakan">
                     <span class="logo-text d-flex flex-column">
+                        <strong>Kecamatan Pemangkat</strong>
+                        <small>Kabupaten Sambas</small>
                         <strong>Kecamatan Pemangkat</strong>
                         <small>Kabupaten Sambas</small>
                     </span>
@@ -165,38 +168,6 @@
             // Initial check and attach scroll listener
             updateNavbarTransparency();
             window.addEventListener('scroll', updateNavbarTransparency);
-        });
-
-
-        // Menutup sidebar
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbarCollapse = document.getElementById('navbarSupportedContent');
-            const closeBtn = document.getElementById('closeSidebar');
-            const toggleBtn = document.querySelector('.navbar-toggler');
-
-            // Event listener untuk membuka dan menutup sidebar
-            toggleBtn.addEventListener('click', function() {
-                navbarCollapse.classList.toggle('show');
-            });
-
-            // Event listener untuk menutup sidebar menggunakan tombol 'X'
-            closeBtn.addEventListener('click', function() {
-                navbarCollapse.classList.remove('show'); // Menutup sidebar
-                closeBtn.style.display = 'none'; // Sembunyikan tombol 'X'
-                toggleBtn.style.display = 'block'; // Tampilkan ikon sidebar
-            });
-
-            // Event listener untuk menghilangkan ikon sidebar saat sidebar terbuka
-            navbarCollapse.addEventListener('show.bs.collapse', function() {
-                closeBtn.style.display = 'block'; // Tampilkan tombol 'X'
-                toggleBtn.style.display = 'none'; // Sembunyikan ikon toggler
-            });
-
-            // Event listener untuk mengembalikan ikon sidebar saat sidebar ditutup
-            navbarCollapse.addEventListener('hide.bs.collapse', function() {
-                closeBtn.style.display = 'none'; // Sembunyikan tombol 'X'
-                toggleBtn.style.display = 'block'; // Tampilkan ikon toggler
-            });
         });
 
         // Fungsi untuk mengecek posisi elemen dan menambahkan kelas 'show'

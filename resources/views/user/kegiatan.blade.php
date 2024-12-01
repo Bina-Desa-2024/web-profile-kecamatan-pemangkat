@@ -15,9 +15,9 @@
     <!-- Kegiatan -->
     <section id="kegiatan" class="py-5">
         <div class="container transition-container">
-            <div class="row text-center mb-5">
-                <h2 class="subjudul fw-bold">Galeri Kegiatan Desa</h2>
-                <p class="text-muted">Lihat kegiatan yang telah diselenggarakan oleh Kecamatan Pemangkat.</p>
+            <div class="row text-center mb-3">
+                <h2 class="subjudul fw-bold">Galeri Kegiatan Kecamatan</h2>
+                <hr class=" mb-5 " style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             </div>
             <div class="row g-4">
                 @forelse ($kelolakegiatans as $item)
