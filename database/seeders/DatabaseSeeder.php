@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 
         User::create([
             'username' => 'admin',
-            'password' =>bcrypt('adminpemangkat123')
+            'password' =>bcrypt('admin123')
         ]);
         Profildesa::create([
             'sejarah_desa' => 'Sejarah singkat desa ini bermula dari...',
