@@ -131,15 +131,15 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="text-uppercase">Hubungi Kami</h5>
                     <p>
-                        <i class="fas fa-phone-alt me-2"></i>0812-3456-7890<br>
-                        <i class="fas fa-envelope me-2"></i>pemangkat@gmail.com<br>
+                        <i class="fas fa-phone-alt me-2"></i>{{ $kontak->no_hp }}<br>
+                        <i class="fas fa-envelope me-2"></i>{{ $kontak->email }}<br>
                         <i class="fas fa-map-marker-alt me-2"></i>Sambas, Kalimantan Barat
                     </p>
                     <div>
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                        <a target="blank" href="{{ $kontak->url_fb }}" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        {{-- <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a> --}}
+                        <a target="blank" href="{{ $kontak->url_ig }}" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a target="blank" href="{{ $kontak->url_yt }}" class="text-white"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
