@@ -102,7 +102,7 @@
                 <div class="col-lg-12 text-center mt-4">
                     <a href="/layanan-administrasi"
                         class="btn px-3 py-2 shadow-sm fw-bold"
-                        style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                        style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                         <i class="fas fa-info-circle me-2"></i> Selengkapnya
                     </a>
                 </div>
@@ -258,7 +258,7 @@
             <div class="col-lg-12 text-center mt-4">
                 <a href="/daftar-pengumuman" 
                     class="btn px-3 py-2 shadow-sm fw-bold"
-                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                    style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
             </div>
@@ -296,7 +296,7 @@
             <div class="col-lg-12 text-center mt-4">
                 <a href="/daftar-kegiatan"
                     class="btn px-3 py-2 shadow-sm fw-bold"
-                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                    style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
             </div>
