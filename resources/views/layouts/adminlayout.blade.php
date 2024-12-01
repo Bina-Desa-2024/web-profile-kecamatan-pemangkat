@@ -62,6 +62,8 @@
             font-weight: bold;
         }
 
+        
+
         /* .bs-sn ol{
             
             list-style-type: decimal;
@@ -149,14 +151,14 @@
                             <span class="link-text">Kontak</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    {{-- <li class="sidebar-item">
                         <a href="daftardesa"
                             class="sidebar-link {{ Request::is('daftardesa*') ? 'active' : '' }}"
                             id="">
                             <i class="fa-solid fa-user pe-2"></i>
                             <span class="link-text">Daftar Desa</span>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
 
             </div>
@@ -170,13 +172,9 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                <img src="img/6.jpg" class="avatar img-fluid" alt="User Avatar">
+                                <i class="fa-solid fa-user"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#" class="dropdown-item">
-                                    <i class="fa-solid fa-user-gear pe-2"></i>
-                                    Profile
-                                </a>
                                 <form action="/logout" method="POST" class="dropdown-item">
                                     @csrf
                                     <i class="fa-solid fa-right-from-bracket pe-2"></i>
