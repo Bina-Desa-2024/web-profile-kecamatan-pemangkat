@@ -17,7 +17,7 @@
         <div class="container transition-container">
             <div class="row text-center mb-4">
                 <h2 class="fw-bold">Lembaga Kecamatan</h2>
-                <p class="text-muted">Berkenalan dengan lembaga desa yang mendukung kemajuan Desa Pemangkat Kota.</p>
+                <p class="text-muted">Berkenalan dengan lembaga desa yang mendukung kemajuan Kecamatan Pemangkat.</p>
             </div>
             <div class="row">
                 @foreach ($lembagadesas as $lembaga)

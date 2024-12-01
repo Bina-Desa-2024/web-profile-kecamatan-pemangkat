@@ -113,7 +113,7 @@
             <div class="row">
                 <!-- About Section -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase">Tentang Desa</h5>
+                    <h5 class="text-uppercase">Tentang</h5>
                     <p>
                         Pemangkat adalah sebuah kecamatan di Kabupaten Sambas, Kalimantan Barat, Indonesia.
                     </p>

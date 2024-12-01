@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Desa Pemangkat Kota</title>
+    <title>Dashboard - Kecamatan Pemangkat</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="{{ asset('/image/Sambas Logo compress 300x300.png') }}">
     <link
@@ -80,7 +80,7 @@
             <!-- Content fo Sidebar -->
             <div class="h100">
                 <div class="sidebar-logo collapsed-icon">
-                    <a href="#">Desa Pemangkat Kota</a>
+                    <a href="#">Kecamatan Pemangkat</a>
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-item">
@@ -101,7 +101,7 @@
                         <a href="perangkatdesa" class="sidebar-link {{ Request::is('perangkatdesa*') ? 'active' : '' }}"
                             id="admin-perangkat-desa">
                             <i class="fa-solid fa-user-tie pe-2"></i>
-                            <span class="link-text">Perangkat Kecematan</span>
+                            <span class="link-text">Perangkat Kecamatan</span>
                         </a>
                     </li>
                     <li class="sidebar-item">

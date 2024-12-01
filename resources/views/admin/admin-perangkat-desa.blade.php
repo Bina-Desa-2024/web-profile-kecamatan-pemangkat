@@ -3,7 +3,7 @@
     <main class="content px-3 py-2">
         <div class="container-fluid" id="admin-perangkat-desa">
             <div class="mt-3 mb-3">
-                <h4>Kelola Perangkat Desa</h4>
+                <h4>Kelola Perangkat Kecamatan</h4>
             </div>
             <div class="row">
                 <div class="container">
@@ -11,7 +11,7 @@
                         <div class="col-12">
                             <div class="card" id="tambahPerangkatCard">
                                 <div class="card-body">
-                                    <h5>Tambah Struktur Perangkat Desa
+                                    <h5>Tambah Struktur Perangkat Kecamatan
                                         <hr>
                                     </h5>
                                     <form action="/strukturperangkatdesa/{{$strukturperangkatdesa->id}}" method="POST" id="tambahPerangkatForm"
@@ -52,7 +52,7 @@
                         <div class="col-12">
                             <div class="card" id="tambahPerangkatCard">
                                 <div class="card-body">
-                                    <h5>Tambah Perangkat Desa
+                                    <h5>Tambah Perangkat Kecamatan
                                         <hr>
                                     </h5>
                                     <form action="/perangkatdesa" method="POST" id="tambahPerangkatForm"
@@ -123,15 +123,13 @@
                         </tbody>
                     </table>
 
-
-
                     <!-- Modal untuk Edit Perangkat -->
                     <div class="modal fade" id="editPerangkatModal" tabindex="-1" aria-labelledby="editPerangkatModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="editPerangkatModalLabel">Edit Perangkat Desa</h5>
+                                    <h5 class="modal-title" id="editPerangkatModalLabel">Edit Perangkat Kecamatan</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>

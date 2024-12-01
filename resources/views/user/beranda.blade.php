@@ -16,7 +16,7 @@
 
     <!-- Content Section -->
     <section id="content" class="py-5 mt-5">
-        <div class="container-fluid col-lg-10 shadow p-5 rounded bg-white">
+        <div class="container-fluid transition-container col-lg-10 shadow p-5 rounded bg-white">
             <h2 class="subjudul text-center fw-bold text-dark">Tentang Kecamatan Pemangkat</h2>
             <hr class=" mb-5 " style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             <div class="row g-5">
@@ -24,7 +24,7 @@
                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="position-relative overflow-hidden rounded shadow-lg" style="width: 100%; max-width: 500px;">
                         <img src="{{ asset('storage/' . $profiledesa->gambar_profiledesa) }}" class="img-fluid rounded"
-                            alt="Desa Pemangkat Kota"
+                            alt="Kecamatan Pemangkat"
                             style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.3s;">
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="text-center text-lg-start mt-4">
                         <a href="/profile-desa" 
                             class="btn px-3 py-2 shadow-sm fw-bold"
-                            style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                            style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                             <i class="fas fa-info-circle me-2"></i> Selengkapnya
                         </a>
                     </div>
@@ -54,10 +54,6 @@
         <div class="container transition-container">
             <h2 class="subjudul text-center fw-bold text-dark">Informasi Layanan</h2>
             <hr class=" mb-5 " style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
-                {{-- <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px"> --}}
-            {{-- <div class="row text-center mb-5">
-                
-            </div> --}}
             <div class="row g-4">
                 @php
                     $layananStatis = [
@@ -151,7 +147,7 @@
                 <div class="col-lg-12 text-center mt-4">
                     <a href="/layanan-administrasi"
                         class="btn px-3 py-2 shadow-sm fw-bold"
-                        style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                        style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                         <i class="fas fa-info-circle me-2"></i> Selengkapnya
                     </a>
                 </div>
@@ -307,7 +303,7 @@
             <div class="col-lg-12 text-center mt-4">
                 <a href="/daftar-pengumuman" 
                     class="btn px-3 py-2 shadow-sm fw-bold"
-                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                    style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
             </div>
@@ -345,7 +341,7 @@
             <div class="col-lg-12 text-center mt-4">
                 <a href="/daftar-kegiatan"
                     class="btn px-3 py-2 shadow-sm fw-bold"
-                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                    style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
             </div>
@@ -354,7 +350,7 @@
     <!-- End of Pengumuman -->
 
     <section class="py-5">
-        <div class="container">
+        <div class="container transition-container" >
             <div class="text-center mb-4">
                 <h2 class="subjudul text-center fw-bold text-dark">Website Desa</h2>
             </div>

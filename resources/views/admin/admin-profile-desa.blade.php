@@ -3,7 +3,7 @@
     <main class="content px-3 py-2">
         <div class="container-fluid" id="admin-profile-desa">
             <div class="mt-3 mb-3">
-                <h4>Kelola Profile Desa</h4>
+                <h4>Kelola Profil Kecamatan</h4>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -11,27 +11,27 @@
                         <div class="card-body" id="showDataProfil">
                             {{-- foto --}}
                             <div class="row mb-3">
-                                <label class="col-lg-2 col-md-3 col-sm-4 ">Foto Desa:</label>
+                                <label class="col-lg-2 col-md-3 col-sm-4 ">Foto:</label>
                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                     <img src="{{ asset('storage/' . $profiledesa->gambar_profiledesa) }}"
                                         alt="no image yet">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-lg-2 col-md-3 col-sm-4">Sejarah Desa:</label>
+                                <label class="col-lg-2 col-md-3 col-sm-4">Sejarah:</label>
                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                     {!! $profiledesa->sejarah_desa !!}
                                 </div>
                             </div>
                             <!-- Visi Desa -->
                             <div class="row mb-3">
-                                <label class="col-lg-2 col-md-3 col-sm-4">Visi Desa:</label>
+                                <label class="col-lg-2 col-md-3 col-sm-4">Visi:</label>
                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                     {{ $profiledesa->visi_desa }}
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-lg-2 col-md-3 col-sm-4">Misi Desa:</label>
+                                <label class="col-lg-2 col-md-3 col-sm-4">Misi:</label>
                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                     {!! $profiledesa->misi_desa !!}
                                 </div>
@@ -120,7 +120,7 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="editProfilDesaModalLabel">Edit Profil Desa</h5>
+                                        <h5 class="modal-title" id="editProfilDesaModalLabel">Edit Profil Kecamatan</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -154,7 +154,7 @@
                                             </div>
                                             <!-- Visi Desa -->
                                             <div class="form-group row mb-3">
-                                                <label class="col-lg-2 col-md-3 col-sm-4 form-label">Visi Desa:</label>
+                                                <label class="col-lg-2 col-md-3 col-sm-4 form-label">Visi:</label>
                                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                                     <textarea class="form-control" name="visi_desa" placeholder="Masukkan Visi Desa" required>{{ $profiledesa->visi_desa }}</textarea>
                                                 </div>
@@ -162,8 +162,7 @@
 
                                             <!-- Misi Desa -->
                                             <div class="form-group row mb-3">
-                                                <label for="misiDesa" class="col-lg-2 col-md-3 col-sm-4 form-label">Misi
-                                                    Desa:</label>
+                                                <label for="misiDesa" class="col-lg-2 col-md-3 col-sm-4 form-label">Misi:</label>
                                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                                     <textarea name="misi_desa" id="summernote-misidesa" required></textarea>
                                                 </div>
@@ -379,7 +378,7 @@
 
                                             <!-- Mata Pencaharian -->
                                             <div class="form-group row mt-3 mb-3">
-                                                <label class="col-lg-2 col-md-3 col-sm-4 form-label"> Mata Pencaharian:</label>
+                                                <label class="col-lg-2 col-md-3 col-sm-4 form-label">Mata Pencaharian:</label>
                                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                                     <div class="row gx-3 gy-2">
                                                         <div class="col-lg-2 col-md-3">
@@ -483,7 +482,7 @@
                                             </div>
 
                                             <div class="form-group row mt-3 mb-3">
-                                                <label class="col-lg-2 col-md-3 col-sm-4 form-label">Statistika Desa:</label>
+                                                <label class="col-lg-2 col-md-3 col-sm-4 form-label">Statistika:</label>
                                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                                     <div class="row gx-3 gy-2">
                                                         <div class="col-lg-2 col-md-3">
@@ -519,8 +518,7 @@
 
                                             <!-- Peta Desa -->
                                             <div class="form-group row mt-3 mb-3">
-                                                <label for="petaDesa" class="col-lg-2 col-md-3 col-sm-4 form-label">Peta
-                                                    Desa:</label>
+                                                <label for="petaDesa" class="col-lg-2 col-md-3 col-sm-4 form-label">Peta Kecamatan:</label>
                                                 <div class="col-lg-10 col-md-9 col-sm-8">
                                                     <input type="text" class="form-control" id="petaDesa"
                                                         placeholder="Masukkan tautan alamat peta Desa" name="peta_desa"

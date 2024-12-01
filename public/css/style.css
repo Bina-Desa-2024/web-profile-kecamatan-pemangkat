@@ -91,17 +91,13 @@
   color: var(--pr-color) !important;
 }
 
-/* .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-} */
-
 .navbar-transparent {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
 .navbar-solid {
-  background-color: #f2bf18; 
+  background-color: #286a59; 
   transition: background-color 0.3s ease;
 }
 
@@ -121,13 +117,13 @@
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #495057;
+  color: #ffd700;
   text-underline-offset: 6px;
 }
 
 .navbar-nav .nav-item .nav-link.active:hover {
-  color: #495057;
-  text-decoration-color: #495057;
+  color: #ffd700;
+  text-decoration-color: #ffd700;
 }
 
 /* floating button */
@@ -135,7 +131,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
+  background-color: #5EB64E;
   color: white;
   font-size: 18px;
   border-radius: 50%;
@@ -216,7 +212,7 @@ footer .social-icons a:hover {
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background-color: #f2bf18;
+    background-color: #286a59;
   }
 
   .navbar-nav .nav-link {
@@ -268,6 +264,11 @@ footer .social-icons a:hover {
   color: var(--pr-color);
 }
 
+#banner-beranda .text-banner-h1, #banner-beranda .text-banner-h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff; /* Adjust color to match the theme */
+  font-family: var(--pr-font);
+}
 
 #banner-beranda .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/image/kotapemangkat.webp');
