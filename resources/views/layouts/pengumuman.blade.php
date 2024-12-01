@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Desa - Desa Parapakan</title>
+    <title>Profil Kecamatan Pemangkat</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ asset('/image/Sambas Logo compress 300x300.png') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
@@ -18,7 +19,7 @@
                 padding-top: 30px; /* Sesuaikan dengan tinggi navbar */
             }
             .navbar {
-                background-color: #286a59; /* Warna solid navbar */
+                background-color: #f2bf18; /* Warna solid navbar */
             }
             .navbar .nav-link {
                 color: #fff;
@@ -26,7 +27,7 @@
             }
             .navbar .nav-link:hover,
             .navbar .nav-link.active {
-                color: #ffc107; /* Warna kuning untuk item aktif atau hover */
+                color: #495057; /* Warna kuning untuk item aktif atau hover */
             }
             #chatbotBtn {
                 position: fixed;
@@ -44,8 +45,8 @@
                 <a class="navbar-brand ms-3 d-flex align-items-center" href="/">
                     <img src="{{ asset('image/Sambas Logo.png') }}" width="40" class="me-3" alt="Logo of Desa Parapakan">
                     <span class="logo-text d-flex flex-column">
-                        <strong>Desa Parapakan</strong>
-                        <small>Kecamatan Pemangkat</small>
+                        <strong>Kecamatan Pemangkat</strong>
+                        <small>Kabupaten Sambas</small>
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,38 +168,6 @@
             // Initial check and attach scroll listener
             updateNavbarTransparency();
             window.addEventListener('scroll', updateNavbarTransparency);
-        });
-
-
-        // Menutup sidebar
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbarCollapse = document.getElementById('navbarSupportedContent');
-            const closeBtn = document.getElementById('closeSidebar');
-            const toggleBtn = document.querySelector('.navbar-toggler');
-
-            // Event listener untuk membuka dan menutup sidebar
-            toggleBtn.addEventListener('click', function() {
-                navbarCollapse.classList.toggle('show');
-            });
-
-            // Event listener untuk menutup sidebar menggunakan tombol 'X'
-            closeBtn.addEventListener('click', function() {
-                navbarCollapse.classList.remove('show'); // Menutup sidebar
-                closeBtn.style.display = 'none'; // Sembunyikan tombol 'X'
-                toggleBtn.style.display = 'block'; // Tampilkan ikon sidebar
-            });
-
-            // Event listener untuk menghilangkan ikon sidebar saat sidebar terbuka
-            navbarCollapse.addEventListener('show.bs.collapse', function() {
-                closeBtn.style.display = 'block'; // Tampilkan tombol 'X'
-                toggleBtn.style.display = 'none'; // Sembunyikan ikon toggler
-            });
-
-            // Event listener untuk mengembalikan ikon sidebar saat sidebar ditutup
-            navbarCollapse.addEventListener('hide.bs.collapse', function() {
-                closeBtn.style.display = 'none'; // Sembunyikan tombol 'X'
-                toggleBtn.style.display = 'block'; // Tampilkan ikon toggler
-            });
         });
 
         // Fungsi untuk mengecek posisi elemen dan menambahkan kelas 'show'

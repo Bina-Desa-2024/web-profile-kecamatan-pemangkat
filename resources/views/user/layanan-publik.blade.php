@@ -19,7 +19,7 @@
             <div class="row mb-4 justify-content-center text-center">
                 <div class="col-12">
                     <h2 class="subjudul fw-bold">Fasilitas Pendidikan</h2>
-                    <p class="text-muted">Berbagai fasilitas pendidikan yang tersedia untuk mendukung kemajuan pembelajaran.</p>
+                    <hr class=" mb-5 " style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
             <div class="row mb-4 justify-content-center text-center">
                 <div class="col-12">
                     <h2 class="subjudul fw-bold">Fasilitas Publik</h2>
-                    <p class="text-muted">Berbagai fasilitas publik yang tersedia untuk mendukung kemajuan desa.</p>
+                    <hr class=" mb-5 " style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
                 </div>
             </div>
 

@@ -15,7 +15,8 @@
     <!-- Pengumuman -->
     <section id="pengumuman" class="py-5 bg-light">
         <div class="container">
-            <h2 class="subjudul text-center mb-5 fw-bold">Pengumuman</h2>
+            <h2 class="subjudul text-center fw-bold">Pengumuman</h2>
+            <hr class=" mb-5 " style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             <div class="row g-4 justify-content-center">
                 @foreach ($pengumumen as $pengumuman)
                     <div class="col-lg-4 col-md-6">

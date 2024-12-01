@@ -35,13 +35,12 @@
                         {!! \Illuminate\Support\Str::limit($profiledesa->sejarah_desa, 600) !!}
                     </p>
                     <div class="text-center text-lg-start mt-4">
-                        <a href="/profile-desa" 
-                            class="btn px-3 py-2 shadow-sm fw-bold"
+                        <a href="/profile-desa" class="btn px-3 py-2 shadow-sm fw-bold"
                             style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                             <i class="fas fa-info-circle me-2"></i> Selengkapnya
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -50,95 +49,45 @@
 
     <div class="py-2"></div>
 
-    <section id="informasi-layanan" class="py-5" style="margin-top:5px">
-        <div class="container transition-container">
-            <h2 class="subjudul text-center fw-bold text-dark">Informasi Layanan</h2>
-            <hr class=" mb-5 " style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
-                {{-- <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px"> --}}
-            {{-- <div class="row text-center mb-5">
-                
-            </div> --}}
-            <div class="row g-4">
-                @php
-                    $layananStatis = [
-                        [
-                            'nama_layanan' => 'Surat Keterangan Domisili',
-                            'deskripsi' => 'Surat yang menerangkan tempat tinggal seseorang di wilayah tertentu.',
-                            'persyaratan' => ['Fotokopi KTP', 'Fotokopi KK'],
-                            'icon' => 'fas fa-home',
-                        ],
-                        [
-                            'nama_layanan' => 'Surat Keterangan Usaha',
-                            'deskripsi' => 'Dokumen resmi untuk keperluan pendirian atau operasional usaha.',
-                            'persyaratan' => ['Fotokopi KTP', 'Surat Pengantar RT/RW'],
-                            'icon' => 'fas fa-briefcase',
-                        ],
-                        [
-                            'nama_layanan' => 'Surat Keterangan Tidak Mampu',
-                            'deskripsi' => 'Surat yang menerangkan kondisi ekonomi pada seseorang.',
-                            'persyaratan' => ['Fotokopi KTP', 'Fotokopi KK', 'Surat Pengantar RT/RW'],
-                            'icon' => 'fas fa-file-alt',
-                        ],
-                        [
-                            'nama_layanan' => 'Surat Keterangan Kelahiran',
-                            'deskripsi' => 'Surat resmi untuk keperluan administrasi kelahiran anak.',
-                            'persyaratan' => [
-                                'Fotokopi KTP Orang Tua',
-                                'Fotokopi KK',
-                                'Surat Keterangan dari Bidan/Dokter',
-                            ],
-                            'icon' => 'fas fa-baby',
-                        ],
-                        [
-                            'nama_layanan' => 'Surat Keterangan Kematian',
-                            'deskripsi' => 'Dokumen untuk melaporkan dan mengesahkan kematian seseorang.',
-                            'persyaratan' => [
-                                'Fotokopi KTP Almarhum/Almarhumah',
-                                'Fotokopi KK',
-                                'Surat Keterangan Dokter atau RT/RW',
-                            ],
-                            'icon' => 'fa-solid fa-envelope',
-                        ],
-                        [
-                            'nama_layanan' => 'Surat Izin Keramaian',
-                            'deskripsi' => 'Dokumen izin untuk penyelenggaraan acara yang melibatkan orang banyak.',
-                            'persyaratan' => ['Fotokopi KTP Pemohon', 'Surat Pengantar RT/RW', 'Rencana Acara'],
-                            'icon' => 'fas fa-users',
-                        ],
-                    ];
-                @endphp
 
-                @foreach ($layananStatis as $index => $item)
+    <!-- Informasi Layanan -->
+    <section id="informasi-layanan" class="py-5">
+        <div class="container transition-container">
+            <div class="row text-center mb-3">
+                <h2 class="subjudul text-center fw-bold text-dark">Informasi Layanan</h2>
+                <hr class=" mb-5 "
+                    style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
+            </div>
+            <div class="row g-4">
+                @foreach ($layananadministrasis as $item)
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card shadow-sm border-0 rounded-lg h-100">
                             <div class="card-body text-center">
-                                <!-- Service Icon -->
-                                <div class="mb-3">
-                                    <i class="{{ $item['icon'] }} fa-3x" style="color:"></i>
+                                <!-- Service Title with Envelope Icon positioned at the top -->
+                                <div class="d-flex flex-column align-items-center mb-3">
+                                    <i class="fa-solid fa-envelope fa-3x mb-2"></i> <!-- Envelope Icon -->
+                                    <h5 class="card-title fw-bold">{{ $item->nama_layanan }}</h5>
+                                    <!-- Layanan Title -->
                                 </div>
-                                <!-- Service Title -->
-                                <h5 class="card-title fw-bold">{{ $item['nama_layanan'] }}</h5>
+
                                 <!-- Service Description -->
-                                <p class="card-text text-muted mb-3">{{ $item['deskripsi'] }}</p>
+                                <p class="card-text text-muted mb-3">{{ $item->deskripsi }}</p>
+
                                 <!-- Accordion for Requirements -->
-                                <div class="accordion" id="accordionLayanan{{ $index }}">
+                                <div class="accordion" id="accordion-{{ $item->id }}">
                                     <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading{{ $index }}">
+                                        <h6 class="accordion-header" id="heading-{{ $item->id }}">
                                             <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse{{ $index }}"
-                                                aria-expanded="false" aria-controls="collapse{{ $index }}">
+                                                data-bs-toggle="collapse" data-bs-target="#collapse-{{ $item->id }}"
+                                                aria-expanded="false" aria-controls="collapse-{{ $item->id }}">
                                                 Persyaratan
                                             </button>
-                                        </h2>
-                                        <div id="collapse{{ $index }}" class="accordion-collapse collapse"
-                                            aria-labelledby="heading{{ $index }}"
-                                            data-bs-parent="#accordionLayanan{{ $index }}">
-                                            <div class="accordion-body text-start">
-                                                <ul class="mb-0">
-                                                    @foreach ($item['persyaratan'] as $syarat)
-                                                        <li>{{ $syarat }}</li>
-                                                    @endforeach
-                                                </ul>
+                                        </h6>
+                                        <div id="collapse-{{ $item->id }}" class="accordion-collapse collapse"
+                                            aria-labelledby="heading-{{ $item->id }}"
+                                            data-bs-parent="#accordion-{{ $item->id }}">
+                                            <div class="accordion-body">
+                                                {!! $item->persyaratan !!}
                                             </div>
                                         </div>
                                     </div>
@@ -148,14 +97,15 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="col-lg-12 text-center mt-4">
-                    <a href="/layanan-administrasi"
-                        class="btn px-3 py-2 shadow-sm fw-bold"
-                        style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
-                        <i class="fas fa-info-circle me-2"></i> Selengkapnya
-                    </a>
-                </div>
             </div>
+        </div>
+        <!-- End of Informasi Layanan -->
+
+        <div class="col-lg-12 text-center mt-4">
+            <a href="/layanan-administrasi" class="btn px-3 py-2 shadow-sm fw-bold"
+                style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
+                <i class="fas fa-info-circle me-2"></i> Selengkapnya
+            </a>
         </div>
     </section>
 
@@ -305,8 +255,7 @@
                 @endforeach
             </div>
             <div class="col-lg-12 text-center mt-4">
-                <a href="/daftar-pengumuman" 
-                    class="btn px-3 py-2 shadow-sm fw-bold"
+                <a href="/daftar-pengumuman" class="btn px-3 py-2 shadow-sm fw-bold"
                     style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
@@ -343,8 +292,7 @@
                 @endforelse
             </div>
             <div class="col-lg-12 text-center mt-4">
-                <a href="/daftar-kegiatan"
-                    class="btn px-3 py-2 shadow-sm fw-bold"
+                <a href="/daftar-kegiatan" class="btn px-3 py-2 shadow-sm fw-bold"
                     style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
@@ -352,19 +300,23 @@
         </div>
     </section>
     <!-- End of Pengumuman -->
+    <div class="py-4"></div>
 
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-4">
                 <h2 class="subjudul text-center fw-bold text-dark">Website Desa</h2>
+                <hr class=" mb-5 "
+                    style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             </div>
             <div class="row g-4">
                 <!-- Desa 1 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa1" class="text-decoration-none">
+                    <a href="https://pemangkat-kota.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 1" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 1"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Pemangkat Kota</h5>
                             </div>
                         </div>
@@ -372,10 +324,11 @@
                 </div>
                 <!-- Desa 2 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa2" class="text-decoration-none">
+                    <a href="https://gugah-sejahtera.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 2" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 2"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Gugah Sejahtera</h5>
                             </div>
                         </div>
@@ -383,10 +336,11 @@
                 </div>
                 <!-- Desa 3 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa3" class="text-decoration-none">
+                    <a href="https://harapan.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 3" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 3"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Harapan</h5>
                             </div>
                         </div>
@@ -394,10 +348,11 @@
                 </div>
                 <!-- Desa 4 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa4" class="text-decoration-none">
+                    <a href="https://penjajap.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 4" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 4"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Penjajap</h5>
                             </div>
                         </div>
@@ -405,10 +360,11 @@
                 </div>
                 <!-- Desa 5 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa5" class="text-decoration-none">
+                    <a href="https://lonam.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 5" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 5"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Lonam</h5>
                             </div>
                         </div>
@@ -416,10 +372,11 @@
                 </div>
                 <!-- Desa 6 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa6" class="text-decoration-none">
+                    <a href="https://sebatuan.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 6" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 6"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Sebatuan</h5>
                             </div>
                         </div>
@@ -427,10 +384,11 @@
                 </div>
                 <!-- Desa 7 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa7" class="text-decoration-none">
+                    <a href="https://perapakan.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 7" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 7"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Perapakan</h5>
                             </div>
                         </div>
@@ -438,10 +396,11 @@
                 </div>
                 <!-- Desa 8 -->
                 <div class="col-md-3 col-sm-6">
-                    <a href="/desa8" class="text-decoration-none">
+                    <a href="https://jelutung.pemangkat.org/" class="text-decoration-none">
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
-                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 8" class="img-fluid mb-3" style="max-height: 100px;">
+                                <img src="{{ asset('/image/Sambas Logo compress.png') }}" alt="Logo Desa 8"
+                                    class="img-fluid mb-3" style="max-height: 100px;">
                                 <h5 class="card-title text-dark fw-bold">Desa Jelutung</h5>
                             </div>
                         </div>
@@ -450,5 +409,4 @@
             </div>
         </div>
     </section>
-    
 @endsection

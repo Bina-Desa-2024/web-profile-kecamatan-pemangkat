@@ -1,38 +1,37 @@
 @extends('layouts.pengumuman')
 
 @section('child')
-<div class="container-fluid px-4 pt-4" style="max-width: 1300px; margin-bottom: 25px;">
-    <div class="row">
+<div class="container-fluid px-3 px-md-4 pt-4" style="margin-bottom: 25px;">
+    <div class="row justify-content-center">
         <!-- Konten Utama -->
-        <div class="col-md-8 mx-auto">
+        <div class="col-12 col-md-10 col-lg-8">
             <div class="card shadow-lg mb-4" style="border-radius: 10px;">
-                <div class="card-header bg-transparent" style="border-bottom: none; padding: 25px;">
-                    <h1 class="card-title mb-3" style="font-size: 2.5rem; font-weight: bold; line-height: 1.2;">
+                <div class="card-header bg-transparent text-center text-md-start" style="border-bottom: none; padding: 20px;">
+                    <h1 class="card-title mb-3" style="font-size: 1.5rem; font-weight: bold; line-height: 1.2;">
                         {{ $pengumuman->judul }}
                     </h1>
-                    <div class="d-flex justify-content-between text-muted mb-2 flex-wrap" style="font-size: 1rem;">
+                    <div class="d-flex justify-content-center justify-content-md-between text-muted flex-wrap" style="font-size: 0.9rem;">
                         <!-- Kolom Tanggal -->
-                        <div class="col-auto d-flex align-items-center">
-                            <i class="fas fa-calendar-alt" style="margin-right: 8px;"></i>
+                        <div class="d-flex align-items-center mb-2 mb-md-0">
+                            <i class="fas fa-calendar-alt me-2"></i>
                             {{ \Carbon\Carbon::parse($pengumuman->created_at)->format('j F Y') }}
                         </div>
                         <!-- Kolom Penulis -->
-                        <div class="col-auto d-flex align-items-center">
-                            <i class="fas fa-user" style="margin-right: 8px;"></i>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-user me-2"></i>
                             {{ $pengumuman->penulis ?? 'Penulis Tidak Diketahui' }}
                         </div>
                     </div>
-                    
                 </div>
                 @if(!empty($pengumuman->gambar_pengumuman))
                 <img 
                     src="{{ asset('storage/' . $pengumuman->gambar_pengumuman) }}" 
                     alt="Gambar Pengumuman" 
                     class="card-img-top" 
-                    style="object-fit: cover; height: 400px; border-radius: 10px 10px 0 0; padding:15px;">
+                    style="object-fit: cover; width: 100%; height: auto; max-height: 400px; border-radius: 10px 10px 0 0;">
                 @endif
-                <div class="card-body" style="padding: 25px;">
-                    <p class="card-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+                <div class="card-body" style="padding: 20px;">
+                    <p class="card-text" style="font-size: 1rem; line-height: 1.7; color: #555;">
                         {!! $pengumuman->deskripsi_singkat !!}
                     </p>
                 </div>
