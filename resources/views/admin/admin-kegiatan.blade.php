@@ -11,7 +11,7 @@
                         <div class="col-12">
                             <div class="card" id="kelolaKegiatanCard">
                                 <div class="card-body">
-                                    <h5>Kelola Kegiatan
+                                    <h5>Tambah Kegiatan
                                         <hr>
                                     </h5>
                                     <!-- Form Input Kegiatan -->
