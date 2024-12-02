@@ -13,7 +13,7 @@
                     <div class="col-12">
                         <div class="card" id="tambahFasilitasCard">
                             <div class="card-body">
-                                <h5>Tambah Fasilitas Desa</h5>
+                                <h5>Tambah Fasilitas Kecamatan</h5>
                                 <hr>
                                 <form action="/layananpublik" method="POST" enctype="multipart/form-data" id="tambahFasilitasForm">
                                     @csrf
@@ -46,7 +46,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-end mt-4">
-                                        <button type="submit" class="btn btn-simpan">Simpan</button>
+                                        <button type="submit" class="btn btn-success">Simpan</button>
                                     </div>
                                 </form>
                             </div>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
                 </div>
             </form>
         </div>

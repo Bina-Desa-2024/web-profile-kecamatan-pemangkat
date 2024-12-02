@@ -14,21 +14,22 @@
                                     <h5>Tambah Layanan Administrasi
                                         <hr>
                                     </h5>
-                                    <form id="tambahLayananForm" action="/layananadministrasi" method="POST" enctype="multipart/form-data">
+                                    <form id="tambahLayananForm" action="/layananadministrasi" method="POST"
+                                        enctype="multipart/form-data">
                                         @csrf
                                         <!-- Input Nama Layanan -->
                                         <div class="form-group row mb-3">
-                                            <label  class="col-lg-2 col-md-3 col-sm-4 form-label">Nama
+                                            <label class="col-lg-2 col-md-3 col-sm-4 form-label">Nama
                                                 Layanan:</label>
                                             <div class="col-lg-10 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" name="nama_layanan" name="nama_layanan" required>
+                                                <input type="text" class="form-control" name="nama_layanan"
+                                                    name="nama_layanan" required>
                                             </div>
                                         </div>
 
                                         <!-- Input Deskripsi Layanan -->
                                         <div class="form-group row mb-3">
-                                            <label 
-                                                class="col-lg-2 col-md-3 col-sm-4 form-label">Deskripsi:</label>
+                                            <label class="col-lg-2 col-md-3 col-sm-4 form-label">Deskripsi:</label>
                                             <div class="col-lg-10 col-md-9 col-sm-8">
                                                 <textarea class="form-control" name="deskripsi" required></textarea>
                                             </div>
@@ -36,8 +37,7 @@
 
                                         <!-- Input Persyaratan Layanan -->
                                         <div class="form-group row mb-3">
-                                            <label 
-                                                class="col-lg-2 col-md-3 col-sm-4 form-label">Persyaratan:</label>
+                                            <label class="col-lg-2 col-md-3 col-sm-4 form-label">Persyaratan:</label>
                                             <div class="col-lg-10 col-md-9 col-sm-8">
                                                 <textarea class="form-control" id="summernote-layadmin-create" name="persyaratan" required></textarea>
                                             </div>
@@ -45,9 +45,9 @@
 
                                         <!-- Tombol Submit -->
                                         <div class="d-flex justify-content-end mt-4">
-                                            <button type="submit" class="btn btn-simpan">Simpan</button>
+                                            <button type="submit" class="btn btn-success">Simpan</button>
                                             <button type="button" onclick="resetForm()"
-                                                class="btn btn-batal ms-2">Batal</button>
+                                                class="btn btn-secondary ms-2">Batal</button>
                                         </div>
                                     </form>
                                 </div>
@@ -87,8 +87,8 @@
                     </table>
 
                     <!-- Modal untuk Edit Layanan -->
-                    <div class="modal fade" id="editLayananAdministrasiModal" tabindex="-1" aria-labelledby="editLayananModalLabel"
-                        aria-hidden="true">
+                    <div class="modal fade" id="editLayananAdministrasiModal" tabindex="-1"
+                        aria-labelledby="editLayananModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -100,10 +100,12 @@
                                     <form id="editLayananForm" method="POST">
                                         @method('put')
                                         @csrf
-                                        <input type="hidden" id="editId" name="id"> <!-- Menyimpan index untuk mengedit -->
+                                        <input type="hidden" id="editId" name="id">
+                                        <!-- Menyimpan index untuk mengedit -->
                                         <div class="mb-3">
                                             <label for="editNamaLayanan" class="form-label">Nama Layanan</label>
-                                            <input type="text" class="form-control" name="nama_layanan" id="editNamaLayanan" required>
+                                            <input type="text" class="form-control" name="nama_layanan"
+                                                id="editNamaLayanan" required>
                                         </div>
                                         <div class="mb-3">
                                             <label for="editDeskripsiLayanan" class="form-label">Deskripsi</label>
@@ -111,38 +113,42 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="editPersyaratanLayanan" class="form-label">Persyaratan</label>
-                                            <textarea type="text" class="form-control" name="persyaratan"id="summernote-layadmin-update" id="editPersyaratanLayanan" required></textarea>
+                                            <textarea type="text" class="form-control" name="persyaratan"id="summernote-layadmin-update"
+                                                id="editPersyaratanLayanan" required></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-edit">Update</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
                     <!-- Modal Konfirmasi Hapus -->
-<div class="modal fade" id="deleteLayananModal" tabindex="-1" aria-labelledby="deleteLayananModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title" id="deleteLayananModalLabel">Konfirmasi Hapus</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Apakah Anda yakin ingin menghapus layanan <strong id="deleteLayananName"></strong>?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <form id="deleteLayananForm" method="POST" class="d-inline">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-danger">Hapus</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+                    <div class="modal fade" id="deleteLayananModal" tabindex="-1" aria-labelledby="deleteLayananModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="deleteLayananModalLabel">Konfirmasi Hapus</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Apakah Anda yakin ingin menghapus layanan <strong id="deleteLayananName"></strong>?
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Batal</button>
+                                    <form id="deleteLayananForm" method="POST" class="d-inline">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-danger">Hapus</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -181,17 +187,16 @@
         }
 
         function showDeleteModal(id, namaLayanan) {
-    // Tampilkan nama layanan di modal
-    document.getElementById('deleteLayananName').textContent = namaLayanan;
+            // Tampilkan nama layanan di modal
+            document.getElementById('deleteLayananName').textContent = namaLayanan;
 
-    // Atur action form penghapusan
-    const deleteForm = document.getElementById('deleteLayananForm');
-    deleteForm.action = `/layananadministrasi/${id}`;
+            // Atur action form penghapusan
+            const deleteForm = document.getElementById('deleteLayananForm');
+            deleteForm.action = `/layananadministrasi/${id}`;
 
-    // Tampilkan modal konfirmasi
-    const deleteModal = new bootstrap.Modal(document.getElementById('deleteLayananModal'));
-    deleteModal.show();
-}
-
+            // Tampilkan modal konfirmasi
+            const deleteModal = new bootstrap.Modal(document.getElementById('deleteLayananModal'));
+            deleteModal.show();
+        }
     </script>
 @endsection

@@ -58,7 +58,7 @@
             <div class="col-12 d-flex">
                 <div class="card flex-fill border-0">
                     <div class="card-body py-4">
-                        <h5 class="card-title">Peta Desa</h5>
+                        <h5 class="card-title">Peta Kecamatan</h5>
                         <div class="mt-3">
                             {!! $profiledesa->peta_desa !!}
                         </div>

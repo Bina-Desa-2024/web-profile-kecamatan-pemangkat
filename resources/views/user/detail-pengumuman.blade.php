@@ -19,7 +19,7 @@
                         <!-- Kolom Penulis -->
                         <div class="d-flex align-items-center">
                             <i class="fas fa-user me-2"></i>
-                            {{ $pengumuman->penulis ?? 'Penulis Tidak Diketahui' }}
+                            {{ $pengumuman->penulis ?? 'Admin' }}
                         </div>
                     </div>
                 </div>

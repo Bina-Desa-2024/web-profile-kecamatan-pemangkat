@@ -29,8 +29,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row mb-3">
-                                    <label class="col-lg-2 col-md-3 col-sm-4 form-label">Deskripsi
-                                        Singkat:</label>
+                                    <label class="col-lg-2 col-md-3 col-sm-4 form-label">Deskripsi:</label>
                                     <div class="col-lg-10 col-md-9 col-sm-8 ">
                                         <textarea class="" name="deskripsi_singkat" id="summernote" required></textarea>
                                     </div>
@@ -45,7 +44,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-end mt-4">
-                                    <button type="submit" class="btn btn-simpan">Simpan</button>
+                                    <button type="submit" class="btn btn-success">Simpan</button>
                                 </div>
                             </form>
                         </div>
@@ -60,7 +59,7 @@
                                 <th>No</th>
                                 <th>Tanggal Dibuat</th>
                                 <th>Judul</th>
-                                <th>Deskripsi Singkat</th>
+                                <th>Deskripsi</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -91,7 +90,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="editPerangkatModalLabel">Edit Perangkat Desa</h5>
+                                    <h5 class="modal-title" id="editPerangkatModalLabel">Edit Pengumuman</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -107,7 +106,7 @@
                                                 required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="editDeskripsi" class="form-label">Deskripsi Singkat</label>
+                                            <label for="editDeskripsi" class="form-label">Deskripsi</label>
                                             <textarea name="deskripsi_singkat" id="summernote2" required></textarea>
                                         </div>
                                         <div class="mb-3">
@@ -117,7 +116,7 @@
                                             <input type="file" name="gambar_pengumuman" class="form-control"
                                                 id="editFoto" accept="image/*" onchange="changeImage(event)">
                                         </div>
-                                        <button type="submit" class="btn btn-edit">Update</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
                                     </form>
                                 </div>
                             </div>

@@ -22,9 +22,9 @@
                                         <input type="text" name="oldImage" hidden value="{{$strukturperangkatdesa->gambar_strukturdesa }}" >
                                         <div class="form-group row mb-3">
                                             <label for="nama"
-                                                class="col-lg-2 col-md-3 col-sm-4 form-label">Nama:</label>
+                                                class="col-lg-2 col-md-3 col-sm-4 form-label">Tahun:</label>
                                             <div class="col-lg-10 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" name="nama" value="{{$strukturperangkatdesa->nama}}" required>
+                                                <input type="text" class="form-control" name="nama" value="{{$strukturperangkatdesa->nama}}" required placeholder="contoh: 2024 - 2026">
                                             </div>
                                         </div>
                                         <div class="form-group row mb-3">
@@ -36,9 +36,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-end mt-4">
-                                            <button type="submit" class="btn btn-simpan">Simpan</button>
-                                            {{-- <button type="button" onclick="toggleTambahPerangkatCard()"
-                            class="btn btn-batal ms-2">Batal</button> --}}
+                                            <button type="submit" class="btn btn-success">Simpan</button>
                                         </div>
                                     </form>
                                 </div>
@@ -81,9 +79,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-end mt-4">
-                                            <button type="submit" class="btn btn-simpan">Simpan</button>
-                                            {{-- <button type="button" onclick="toggleTambahPerangkatCard()"
-                            class="btn btn-batal ms-2">Batal</button> --}}
+                                            <button type="submit" class="btn btn-success">Simpan</button>
                                         </div>
                                     </form>
                                 </div>
@@ -156,7 +152,7 @@
                                             <input type="file" name="gambar_perangkatdesa" class="form-control"
                                                 id="editFoto" accept="image/*" onchange="changeImage(event)">
                                         </div>
-                                        <button type="submit" class="btn btn-edit">Update</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
                                     </form>
                                 </div>
                             </div>

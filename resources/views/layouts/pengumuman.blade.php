@@ -47,8 +47,6 @@
                     <span class="logo-text d-flex flex-column">
                         <strong>Kecamatan Pemangkat</strong>
                         <small>Kabupaten Sambas</small>
-                        <strong>Kecamatan Pemangkat</strong>
-                        <small>Kabupaten Sambas</small>
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
