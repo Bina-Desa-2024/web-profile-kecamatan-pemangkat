@@ -3,7 +3,7 @@
     <main class="content px-3 py-2">
         <div class="container-fluid" id="admin-kontak">
             <div class="mt-3 mb-3">
-                <h4>Kelola Kontak Desa</h4>
+                <h4>Kelola Kontak Kecamatan</h4>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -61,15 +61,13 @@
                                 </div>
                                 <!-- Submit Button -->
                                 <div class="d-flex justify-content-end mt-4">
-                                    <button type="submit" class="btn btn-simpan">Simpan</button>
+                                    <button type="submit" class="btn btn-success">Simpan</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </main>
 @endsection

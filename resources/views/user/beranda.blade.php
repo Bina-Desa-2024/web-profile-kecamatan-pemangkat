@@ -35,8 +35,7 @@
                         {!! \Illuminate\Support\Str::limit($profiledesa->sejarah_desa, 600) !!}
                     </p>
                     <div class="text-center text-lg-start mt-4">
-                        <a href="/profile-desa" 
-                            class="btn px-3 py-2 shadow-sm fw-bold"
+                        <a href="/profile-desa" class="btn px-3 py-2 shadow-sm fw-bold"
                             style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                             <i class="fas fa-info-circle me-2"></i> Selengkapnya
                         </a>
@@ -50,13 +49,12 @@
 
     <div class="py-2"></div>
 
-
     <!-- Informasi Layanan -->
     <section id="informasi-layanan" class="py-5">
         <div class="container transition-container">
             <h2 class="subjudul text-center fw-bold text-dark">Informasi Layanan</h2>
             <hr class=" mb-5 " style="width: 200px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
-                {{-- <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px"> --}}
+            {{-- <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px"> --}}
             {{-- <div class="row text-center mb-5">
                 
             </div> --}}
@@ -100,8 +98,7 @@
                     </div>
                 @endforeach
                 <div class="col-lg-12 text-center mt-4">
-                    <a href="/layanan-administrasi"
-                        class="btn px-3 py-2 shadow-sm fw-bold"
+                    <a href="/layanan-administrasi" class="btn px-3 py-2 shadow-sm fw-bold"
                         style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                         <i class="fas fa-info-circle me-2"></i> Selengkapnya
                     </a>
@@ -193,29 +190,18 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-
-            <!-- "See More" Button -->
-            {{-- <div class="row mt-4">
-                <div class="col-lg-12 text-center">
-                    <a href="/perangkat-desa" 
-                    class="btn px-3 py-2 shadow-sm fw-bold"
-                    style="background-color: #F2BF18; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
-                    <i class="fas fa-info-circle me-2"></i>
-                        Selengkapnya
-                    </a>
-                </div>
-            </div> --}}
     </section>
     <!-- End of Perangkat Desa Section -->
 
     <div class="py-2"></div>
 
-    <!-- Pengumuman -->
+    <!-- Pengumuman Section -->
     <section id="pengumuman" class="py-5 bg-white">
         <div class="container transition-container mb-3">
             <h2 class="subjudul text-center fw-bold text-dark">Pengumuman</h2>
-            <hr class=" mb-5" style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
+            <hr class="mb-5" style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
+
+            <!-- Cards Section -->
             <div class="row g-4 justify-content-center">
                 @foreach ($pengumumen as $pengumuman)
                     <div class="col-lg-4 col-md-6">
@@ -247,7 +233,7 @@
                                     </h5>
                                     <!-- Deskripsi Singkat -->
                                     <p class="card-text text-muted small">
-                                        {!! \Illuminate\Support\Str::limit($pengumuman->deskripsi_singkat, 100) !!}
+                                        {!! \Illuminate\Support\Str::limit($pengumuman->deskripsi_singkat, 500) !!}
                                     </p>
                                 </div>
                             </div>
@@ -255,9 +241,10 @@
                     </div>
                 @endforeach
             </div>
-            <div class="col-lg-12 text-center mt-4">
-                <a href="/daftar-pengumuman" 
-                    class="btn px-3 py-2 shadow-sm fw-bold"
+
+            <!-- "Selengkapnya" Button -->
+            <div class="text-center mt-5">
+                <a href="/daftar-pengumuman" class="btn px-3 py-2 shadow-sm fw-bold"
                     style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
@@ -294,8 +281,7 @@
                 @endforelse
             </div>
             <div class="col-lg-12 text-center mt-4">
-                <a href="/daftar-kegiatan"
-                    class="btn px-3 py-2 shadow-sm fw-bold"
+                <a href="/daftar-kegiatan" class="btn px-3 py-2 shadow-sm fw-bold"
                     style="background-color: #286a59; color: white; font-size: 1rem; border-radius: 0.5rem; transition: background-color 0.3s ease, transform 0.2s;">
                     <i class="fas fa-info-circle me-2"></i> Selengkapnya
                 </a>
@@ -306,7 +292,7 @@
     <div class="py-4"></div>
 
     <section class="py-5">
-        <div class="container transition-container" >
+        <div class="container transition-container">
             <div class="text-center mb-4">
                 <h2 class="subjudul text-center fw-bold text-dark">Website Desa</h2>
                 <hr class=" mb-5 "

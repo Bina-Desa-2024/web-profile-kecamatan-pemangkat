@@ -10,7 +10,8 @@ use App\Models\Layananadministrasi;
 use App\Models\Kelolakegiatan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-class PerangkatdesaController  
+
+class PerangkatdesaController
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +19,9 @@ class PerangkatdesaController
     public function index()
     {
         return view('admin.admin-perangkat-desa', [
-            'perangkatdesas' => Perangkatdesa::all(), 
+            'perangkatdesas' => Perangkatdesa::all(),
             'strukturperangkatdesa' => Strukturperangkatdesa::first(),
-            
+
         ]);
     }
 
@@ -41,13 +42,13 @@ class PerangkatdesaController
         $validatedData = $request->validate([
             'nama' => 'required',
             'jabatan' => 'required',
-            'gambar_perangkatdesa'=>'image'
+            'gambar_perangkatdesa' => 'image'
         ]);
-        if($request->file('gambar_perangkatdesa')) {
+        if ($request->file('gambar_perangkatdesa')) {
             $validatedData['gambar_perangkatdesa'] = $request->file('gambar_perangkatdesa')->store('gambar_yang_tersimpan');
         }
         Perangkatdesa::create($validatedData);
-        return redirect('/perangkatdesa')->with('success', 'Perangkat desa baru berhasil ditambahkan');
+        return redirect('/perangkatdesa')->with('success', 'Perangkat kecamatan baru berhasil ditambahkan');
     }
 
     /**
@@ -57,10 +58,10 @@ class PerangkatdesaController
     {
         return view('user.beranda', [
             'perangkatdesas' => Perangkatdesa::all(),
-            'pengumumen'=>Pengumuman::limit(3)->get(),
+            'pengumumen' => Pengumuman::orderBy('created_at', 'desc')->limit(3)->get(),
             'profiledesa' => Profildesa::first(),
             'layananadministrasis' => Layananadministrasi::all(),
-            'kelolakegiatans' => Kelolakegiatan::limit(3)->get()
+            'kelolakegiatans' => Kelolakegiatan::orderBy('created_at', 'desc')->limit(3)->get()
         ]);
     }
 
@@ -85,8 +86,8 @@ class PerangkatdesaController
             'jabatan' => 'required',
             'gambar_perangkatdesa' => 'image'
         ]);
-        if($request->file('gambar_perangkatdesa')) {
-            if($request->oldImage){
+        if ($request->file('gambar_perangkatdesa')) {
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $validatedData['gambar_perangkatdesa'] = $request->file('gambar_perangkatdesa')->store('gambar_yang_tersimpan');
@@ -94,7 +95,7 @@ class PerangkatdesaController
         Perangkatdesa::where('id', $request->input('id'))
             ->update($validatedData);
 
-        return redirect('/perangkatdesa')->with('success', 'Perangkat desa berhasil diupdate');
+        return redirect('/perangkatdesa')->with('success', 'Perangkat kecamatan berhasil diupdate');
     }
 
     /**
@@ -103,10 +104,10 @@ class PerangkatdesaController
     public function destroy(Request $request, Perangkatdesa $perangkatdesa)
     {
         // dd($request);
-        if($perangkatdesa->gambar_perangkatadesa){
+        if ($perangkatdesa->gambar_perangkatadesa) {
             Storage::delete($perangkatdesa->gambar_perangkatadesa);
         }
         Perangkatdesa::destroy($perangkatdesa->id);
-        return redirect('/perangkatdesa')->with('error', 'Perangkat desa berhasil dihapus');
+        return redirect('/perangkatdesa')->with('error', 'Perangkat kecamatan berhasil dihapus');
     }
 }

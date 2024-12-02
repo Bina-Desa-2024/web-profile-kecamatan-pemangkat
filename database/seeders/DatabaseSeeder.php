@@ -85,7 +85,7 @@ class DatabaseSeeder extends Seeder
             'jumlah_rt' => 0,
             'jumlah_rw' => 0,
 
-            'peta_desa' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17596.69517182833!2d108.89841217452445!3d0.692050119300173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e305ab91cca753%3A0x10d868d0d0d897e3!2sSungai%20Keran%20Village%20Office!5e0!3m2!1sen!2sid!4v1728940315050!5m2!1sen!2sid" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+            'peta_desa' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63824.01854345165!2d108.94074580664062!3d1.1596378944504027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e48297b82d626d%3A0x88e7f64d4723b4d5!2sPemangkat%2C%20Sambas%20Regency%2C%20West%20Kalimantan!5e0!3m2!1sen!2sid!4v1733072188517!5m2!1sen!2sid" width=100% height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         ]);
         Kelolakontak::create([
             'no_hp'=>'081234567890',

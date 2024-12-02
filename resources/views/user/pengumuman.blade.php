@@ -38,7 +38,7 @@
                                         <!-- Ikon Penulis -->
                                         <span>
                                             <i class="fas fa-user" style="margin-right: 8px;"></i>
-                                            {{ $pengumuman->penulis ?? 'Penulis Tidak Diketahui' }}
+                                            {{ 'Admin' }}
                                         </span>
                                     </div>
                                     <!-- Judul -->
