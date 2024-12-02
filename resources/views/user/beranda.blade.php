@@ -86,7 +86,7 @@
                                         <div id="collapse-{{ $item->id }}" class="accordion-collapse collapse"
                                             aria-labelledby="heading-{{ $item->id }}"
                                             data-bs-parent="#accordion-{{ $item->id }}">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body text-start">
                                                 {!! $item->persyaratan !!}
                                             </div>
                                         </div>
