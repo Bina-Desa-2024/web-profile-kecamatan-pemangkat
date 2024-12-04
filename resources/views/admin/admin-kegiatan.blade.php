@@ -91,7 +91,7 @@
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header bg-warning">
                                     <h5 class="modal-title" id="editKegiatanModalLabel">Edit Kegiatan</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -114,7 +114,10 @@
                                             <input name="gambar_kegiatan" type="file" class="form-control"
                                                 accept="image/*" onchange="changeImage(event)">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Update</button>
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                            <button type="submit" class="btn btn-warning text-white">Update</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -125,7 +128,7 @@
                         aria-labelledby="deleteKegiatanModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header bg-danger text-white">
                                     <h5 class="modal-title" id="deleteKegiatanModalLabel">Konfirmasi Hapus</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>

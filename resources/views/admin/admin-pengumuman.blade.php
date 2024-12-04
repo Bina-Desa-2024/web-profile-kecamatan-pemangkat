@@ -72,10 +72,12 @@
                                     <td>{!! $pengumuman->deskripsi_singkat !!}</td>
                                     <td>
                                         <a class="btn btn-warning" href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#editPerangkatModal" onclick="loadEditData({{ $pengumuman }})">
+                                            data-bs-target="#editPerangkatModal"
+                                            onclick="loadEditData({{ $pengumuman }})">
                                             <i class="fa-solid fa-pen-to-square"></i>
                                         </a>
-                                        <button class="btn btn-danger border-0" onclick="showDeleteModal('{{ $pengumuman->id }}', '{{ $pengumuman->judul }}')">
+                                        <button class="btn btn-danger border-0"
+                                            onclick="showDeleteModal('{{ $pengumuman->id }}', '{{ $pengumuman->judul }}')">
                                             <i class="fa-solid fa-trash-can"></i>
                                         </button>
                                     </td>
@@ -89,7 +91,7 @@
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header bg-warning">
                                     <h5 class="modal-title" id="editPerangkatModalLabel">Edit Pengumuman</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -116,37 +118,45 @@
                                             <input type="file" name="gambar_pengumuman" class="form-control"
                                                 id="editFoto" accept="image/*" onchange="changeImage(event)">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Update</button>
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Batal</button>
+                                            <button type="submit" class="btn btn-warning text-white">Update</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{-- modal stops here --}}
-                    <!-- Modal Konfirmasi Hapus -->
-<div class="modal fade" id="deletePengumumanModal" tabindex="-1" aria-labelledby="deletePengumumanModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="deletePengumumanModalLabel">Konfirmasi Hapus</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Apakah Anda yakin ingin menghapus pengumuman <strong id="deletePengumumanName"></strong>?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <form id="deletePengumumanForm" method="POST" class="d-inline">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-danger">Hapus</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
-                
+                    <!-- Modal Konfirmasi Hapus -->
+                    <div class="modal fade" id="deletePengumumanModal" tabindex="-1"
+                        aria-labelledby="deletePengumumanModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title" id="deletePengumumanModalLabel">Konfirmasi Hapus</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Apakah Anda yakin ingin menghapus pengumuman <strong
+                                            id="deletePengumumanName"></strong>?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Batal</button>
+                                    <form id="deletePengumumanForm" method="POST" class="d-inline">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-danger">Hapus</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -187,18 +197,16 @@
         }
 
         function showDeleteModal(id, judul) {
-    // Tampilkan nama pengumuman di modal
-    document.getElementById('deletePengumumanName').textContent = judul;
+            // Tampilkan nama pengumuman di modal
+            document.getElementById('deletePengumumanName').textContent = judul;
 
-    // Atur action form penghapusan
-    const deleteForm = document.getElementById('deletePengumumanForm');
-    deleteForm.action = `/pengumuman/${id}`;
+            // Atur action form penghapusan
+            const deleteForm = document.getElementById('deletePengumumanForm');
+            deleteForm.action = `/pengumuman/${id}`;
 
-    // Tampilkan modal konfirmasi
-    const deleteModal = new bootstrap.Modal(document.getElementById('deletePengumumanModal'));
-    deleteModal.show();
-}
-
+            // Tampilkan modal konfirmasi
+            const deleteModal = new bootstrap.Modal(document.getElementById('deletePengumumanModal'));
+            deleteModal.show();
+        }
     </script>
-    
 @endsection

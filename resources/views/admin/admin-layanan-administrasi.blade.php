@@ -91,7 +91,7 @@
                         aria-labelledby="editLayananModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header bg-warning">
                                     <h5 class="modal-title" id="editLayananModalLabel">Edit Layanan Administrasi</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -116,7 +116,10 @@
                                             <textarea type="text" class="form-control" name="persyaratan"id="summernote-layadmin-update"
                                                 id="editPersyaratanLayanan" required></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Update</button>
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                            <button type="submit" class="btn btn-warning text-white">Update</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -163,7 +166,7 @@
         function loadEditData(layananadministrasi) {
             // Isi nilai input dengan data dari parameter
             document.getElementById('editId').value = layananadministrasi.id;
-            document.getElementById('editNamaLayanan').value = layananadministrasi.judul;
+            document.getElementById('editNamaLayanan').value = layananadministrasi.nama_layanan;
             document.getElementById('editDeskripsiLayanan').value = layananadministrasi.deskripsi;
             $('#summernote-layadmin-update').summernote('code', layananadministrasi.persyaratan);
 

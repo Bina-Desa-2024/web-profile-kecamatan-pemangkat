@@ -1334,6 +1334,24 @@ a.sidebar-link.active {
   border-radius: 15px !important;
 }
 
+@media (max-width: 768px) {
+  .d-flex.justify-content-between {
+      flex-direction: column; /* Elemen akan ditumpuk */
+      align-items: center; /* Pusatkan konten */
+      text-align: center; /* Supaya teks rata tengah */
+  }
+
+  .d-flex.align-items-center {
+      margin-bottom: 0.5rem; /* Tambahkan jarak antar elemen */
+  }
+}
+
+i.fas {
+  font-size: 1rem; /* Ikon proporsional */
+  margin-right: 0.5rem; /* Jarak kanan ikon */
+}
+
+
 
 
 

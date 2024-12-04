@@ -10,18 +10,18 @@
                     <h1 class="card-title mb-3" style="font-size: 1.5rem; font-weight: bold; line-height: 1.2;">
                         {{ $pengumuman->judul }}
                     </h1>
-                    <div class="d-flex justify-content-center justify-content-md-between text-muted flex-wrap" style="font-size: 0.9rem;">
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between text-muted flex-wrap" style="font-size: 0.9rem;">
                         <!-- Kolom Tanggal -->
                         <div class="d-flex align-items-center mb-2 mb-md-0">
-                            <i class="fas fa-calendar-alt me-2"></i>
-                            {{ \Carbon\Carbon::parse($pengumuman->created_at)->format('j F Y') }}
+                            <i class="fas fa-calendar-alt me-2" style="font-size: 1rem;"></i>
+                            <span>{{ \Carbon\Carbon::parse($pengumuman->created_at)->format('j F Y') }}</span>
                         </div>
                         <!-- Kolom Penulis -->
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-user me-2"></i>
-                            {{ $pengumuman->penulis ?? 'Admin' }}
+                            <i class="fas fa-user me-2" style="font-size: 1rem;"></i>
+                            <span>{{ $pengumuman->penulis ?? 'Admin' }}</span>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
                 @if(!empty($pengumuman->gambar_pengumuman))
                 <img 

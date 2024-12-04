@@ -112,7 +112,7 @@
     <!-- Video Profile Section -->
     <section id="video-profile" class="py-5">
         <div class="container-fluid transition-container col-lg-10 shadow-sm p-4 rounded">
-            <h2 class="subjudul text-center fw-bold">Video Profile Desa</h2>
+            <h2 class="subjudul text-center fw-bold">Video Profile</h2>
             <hr class=" mb-4" style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -137,7 +137,7 @@
             <!-- Section Title -->
             <div class="row mb-4 justify-content-center text-center">
                 <div class="col-12">
-                    <h2 class="subjudul text-center fw-bold text-dark">Perangkat Desa</h2>
+                    <h2 class="subjudul text-center fw-bold text-dark">Perangkat Kecamatan</h2>
                     <hr style="width: 150px; margin: 0 auto; border: 2px solid black; opacity: 1; margin-top:10px">
                 </div>
             </div>
@@ -233,7 +233,7 @@
                                     </h5>
                                     <!-- Deskripsi Singkat -->
                                     <p class="card-text text-muted small">
-                                        {!! \Illuminate\Support\Str::limit($pengumuman->deskripsi_singkat, 500) !!}
+                                        {!! \Illuminate\Support\Str::limit($pengumuman->deskripsi_singkat, 250) !!}
                                     </p>
                                 </div>
                             </div>

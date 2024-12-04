@@ -56,7 +56,7 @@ class LayananpublikController
         Layananpublik::create($validatedData);
 
         // Redirect back with success message
-        return redirect('/layananpublik')->with('success', 'Lembaga Desa baru berhasil ditambahkan');
+        return redirect('/layananpublik')->with('success', 'Fasilitas Kecamatan baru berhasil ditambahkan');
     }
 
     public function show()
@@ -101,7 +101,7 @@ class LayananpublikController
         Layananpublik::where('id', $request->input('id'))
             ->update($validatedData);
 
-        return redirect('/layananpublik')->with('success', 'Lembaga desa berhasil diupdate');
+        return redirect('/layananpublik')->with('success', ' Fasilitas Kecamatan berhasil diupdate');
 
     }
 
@@ -119,7 +119,7 @@ class LayananpublikController
         $layananpublik->delete(); // Perbaikan: Gunakan metode delete() pada model langsung
     
         // Mengalihkan ke halaman dengan pesan sukses
-        return redirect('/layananpublik')->with('success', 'Fasilitas berhasil dihapus');
+        return redirect('/layananpublik')->with('error', 'Fasilitas Kecamatan berhasil dihapus');
     }
     
 }

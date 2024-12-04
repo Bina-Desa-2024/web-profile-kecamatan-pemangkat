@@ -43,7 +43,7 @@ class LembagadesaController
             $validatedData['gambar_lembaga'] = $request->file('gambar_lembaga')->store('gambar_yang_tersimpan');
         }
         Lembagadesa::create($validatedData);
-        return redirect('/lembagadesa')->with('success', 'Lembaga Desa baru berhasil ditambahkan');
+        return redirect('/lembagadesa')->with('success', 'Lembaga Kecamatan baru berhasil ditambahkan');
     }
 
     /**
@@ -85,7 +85,7 @@ class LembagadesaController
         Lembagadesa::where('id', $request->input('id'))
             ->update($validatedData);
 
-        return redirect('/lembagadesa')->with('success', 'Lembaga desa berhasil diupdate');
+        return redirect('/lembagadesa')->with('success', 'Lembaga Kecamatan berhasil diupdate');
     }
 
     /**
@@ -98,6 +98,6 @@ class LembagadesaController
             Storage::delete($lembagadesa->gambar_lembaga);
         }
         Lembagadesa::destroy($lembagadesa->id);
-        return redirect('/lembagadesa')->with('success', 'Lembaga desa berhasil dihapus');
+        return redirect('/lembagadesa')->with('error', 'Lembaga Kecamatan berhasil dihapus');
     }
 }
