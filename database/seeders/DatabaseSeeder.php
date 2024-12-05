@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::create([
-            'username' => 'admin',
-            'password' =>bcrypt('admin123')
+            'username' => 'admin_pemangkat',
+            'password' =>bcrypt('Pemangkat2024!')
         ]);
         Profildesa::create([
             'sejarah_desa' => 'Sejarah singkat desa ini bermula dari...',
